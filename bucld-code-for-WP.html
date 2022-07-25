@@ -4,9 +4,32 @@
 <link rel="stylesheet" id="gforms_browsers_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.2.6" type="text/css" media="all" />
 <link rel="stylesheet" id="bu_gforms-css" href="https://www.bu.edu/bucld/wp-content/mu-plugins/bu-gf-customizations/css/bu_base_gf.css?ver=BU-0.6.13" type="text/css" media="all" />
 <div class="gform_wrapper" id="gform_wrapper_bucld">
-  <form method="post" enctype="multipart/form-data" id="gform_bucld" action="/phpbin/telegraph/index.php">
-    <input name="form_configuration" type="hidden" value="config2019.xml">
-    <input name="form_location" type="hidden" value="/bucld/wp-assets/telegraph/">
+  <div class="">
+      <strong class="">Boston University Conference on Language Development (BUCLD) 46:</strong>
+      <span class=""></span>
+  </div>
+  <div></div>
+  <div class="">The 4-day (full) conference fees include entrance to all talks, sessions, events, and publishers&#8217; exhibits. Online registration will continue to be available throughout the conference.</div>
+  <div>
+      <ul>
+<!--
+          <li>
+              <span class="">The 4-day (full) conference pre-registration fee is $45 for general pre-registration, and $0 for student pre-registration</span>
+              .
+          </li>
+      </ul>
+      <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 21st, 11:59 PM EDT</strong>:</div>
+      <ul>
+-->
+          <li>
+              The 4-day
+              <span class="">(full) conference registration fee is $60 for general registration, and $0 for student registration.</span>
+          </li>
+      </ul>
+  </div>
+
+  <form method="post" enctype="multipart/form-data" id="gform_bucld" action="https://www-test.bu.edu/phpbin/marconi/index.php">
+    <input name="form_id" type="hidden" value="bucld">
     <div class="gform_heading"></div>
     <div class="gform_body">
       <div>
@@ -26,272 +49,13 @@
                     </span> </div>
                 </fieldset>
               </li>
-              <li id="field_bucld_address" class="gfield gfield_contains_required field_sublabel_below field_description_below ">
-                <fieldset>
-                  <legend class="gfield_label gfield_label_before_complex">Address<span class="gfield_required">*</span></legend>
-                  <div class="ginput_complex ginput_container has_street has_street2 has_city has_state has_zip has_country ginput_container_address" id="input_bucld_address">
-                    <div> <span class="ginput_full address_line_1">
-                      <input name="input_address_street" type="text" id="input_bucld_address_street" value="" required oninvalid="this.setCustomValidity('Enter Street Address Here')" oninput="this.setCustomValidity('')" />
-                      </span><span class="ginput_full address_line_1">
-                      <label for="input_bucld_address_street" id="input_bucld_address_street_label">Street Address</label>
-                      </span></div>
-                    <div> <span class="ginput_full address_line_2">
-                      <input name="input_address_street2" type="text" id="input_bucld_address_street2" value="" />
-                      </span><span class="ginput_full address_line_2">
-                      <label for="input_bucld_address_street2" id="input_bucld_address_street2_label">Address Line 2</label>
-                      </span></div>
-                    <div><span class="ginput_left address_city">
-                      <input name="input_address_city" type="text" id="input_bucld_address_city" value="" required oninvalid="this.setCustomValidity('Enter City or Town Here')" oninput="this.setCustomValidity('')" />
-                      <label for="input_bucld_address_city" id="input_input_bucld_address_city_label">City</label>
-                      </span><span class="ginput_right address_state">
-                      <input name="input_address_state" type="text" id="input_bucld_address_state" value="" required oninvalid="this.setCustomValidity('Enter State, Region, or Province Here')" oninput="this.setCustomValidity('')" />
-                      <label for="input_bucld_address_state" id="input_bucld_address_state_label">State / Province / Region</label>
-                      </span></div>
-                    <div><span class="ginput_left address_zip">
-                      <input name="input_address_zip" type="text" id="input_bucld_address_zip" value="" required oninvalid="this.setCustomValidity('Enter zip or postal code')" oninput="this.setCustomValidity('')" />
-                      <label for="input_bucld_address_zip" id="input_bucld_address_zip_label">ZIP / Postal Code</label>
-                      </span><span class="ginput_right address_country">
-                      <select name="input_address_country" id="input_bucld_address_country" required oninvalid="this.setCustomValidity('Select Country')" oninput="this.setCustomValidity('')">
-                        <option value="" selected="selected">Select Country</option>
-                        <option value="Afghanistan">Afghanistan</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="American Samoa">American Samoa</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bermuda">Bermuda</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                        <option value="Botswana">Botswana</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="Brunei">Brunei</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Burkina Faso">Burkina Faso</option>
-                        <option value="Burundi">Burundi</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Cameroon">Cameroon</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Cape Verde">Cape Verde</option>
-                        <option value="Cayman Islands">Cayman Islands</option>
-                        <option value="Central African Republic">Central African Republic</option>
-                        <option value="Chad">Chad</option>
-                        <option value="Chile">Chile</option>
-                        <option value="China">China</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Comoros">Comoros</option>
-                        <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
-                        <option value="Congo, Republic of the">Congo, Republic of the</option>
-                        <option value="Costa Rica">Costa Rica</option>
-                        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Curaçao">Curaçao</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Djibouti">Djibouti</option>
-                        <option value="Dominica">Dominica</option>
-                        <option value="Dominican Republic">Dominican Republic</option>
-                        <option value="East Timor">East Timor</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Equatorial Guinea">Equatorial Guinea</option>
-                        <option value="Eritrea">Eritrea</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="Faroe Islands">Faroe Islands</option>
-                        <option value="Fiji">Fiji</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="French Polynesia">French Polynesia</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Gambia">Gambia</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Grenada">Grenada</option>
-                        <option value="Guam">Guam</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Guinea">Guinea</option>
-                        <option value="Guinea-Bissau">Guinea-Bissau</option>
-                        <option value="Guyana">Guyana</option>
-                        <option value="Haiti">Haiti</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran">Iran</option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kiribati">Kiribati</option>
-                        <option value="North Korea">North Korea</option>
-                        <option value="South Korea">South Korea</option>
-                        <option value="Kosovo">Kosovo</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Laos">Laos</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Lesotho">Lesotho</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Libya">Libya</option>
-                        <option value="Liechtenstein">Liechtenstein</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Macedonia">Macedonia</option>
-                        <option value="Madagascar">Madagascar</option>
-                        <option value="Malawi">Malawi</option>
-                        <option value="Malaysia">Malaysia</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Mali">Mali</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Marshall Islands">Marshall Islands</option>
-                        <option value="Mauritania">Mauritania</option>
-                        <option value="Mauritius">Mauritius</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Micronesia">Micronesia</option>
-                        <option value="Moldova">Moldova</option>
-                        <option value="Monaco">Monaco</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Montenegro">Montenegro</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Namibia">Namibia</option>
-                        <option value="Nauru">Nauru</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="Palau">Palau</option>
-                        <option value="Palestine, State of">Palestine, State of</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Papua New Guinea">Papua New Guinea</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Peru</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Puerto Rico">Puerto Rico</option>
-                        <option value="Qatar">Qatar</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Russia">Russia</option>
-                        <option value="Rwanda">Rwanda</option>
-                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                        <option value="Saint Lucia">Saint Lucia</option>
-                        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-                        <option value="Samoa">Samoa</option>
-                        <option value="San Marino">San Marino</option>
-                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="Senegal">Senegal</option>
-                        <option value="Serbia">Serbia</option>
-                        <option value="Seychelles">Seychelles</option>
-                        <option value="Sierra Leone">Sierra Leone</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Sint Maarten">Sint Maarten</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Solomon Islands">Solomon Islands</option>
-                        <option value="Somalia">Somalia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
-                        <option value="Sudan">Sudan</option>
-                        <option value="Sudan, South">Sudan, South</option>
-                        <option value="Suriname">Suriname</option>
-                        <option value="Swaziland">Swaziland</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Syria">Syria</option>
-                        <option value="Taiwan">Taiwan</option>
-                        <option value="Tajikistan">Tajikistan</option>
-                        <option value="Tanzania">Tanzania</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Togo">Togo</option>
-                        <option value="Tonga">Tonga</option>
-                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                        <option value="Tunisia">Tunisia</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Turkmenistan">Turkmenistan</option>
-                        <option value="Tuvalu">Tuvalu</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="United Arab Emirates">United Arab Emirates</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Vanuatu">Vanuatu</option>
-                        <option value="Vatican City">Vatican City</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Vietnam">Vietnam</option>
-                        <option value="Virgin Islands, British">Virgin Islands, British</option>
-                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-                        <option value="Yemen">Yemen</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Zimbabwe">Zimbabwe</option>
-                      </select>
-                      <label for="input_bucld_address_country" id="input_bucld_address_country_label">Country</label>
-                      </span></div>
-                  </div>
-                </fieldset>
-              </li>
               <li id="field_bucld_contact" class="gfield gfield_contains_required field_sublabel_below field_description_below ">
                 <fieldset>
                   <legend class="gfield_label gfield_label_before_complex">Contact information<span class="gfield_required">*</span></legend>
                   <div class="ginput_complex ginput_container ginput_container_contact" id="input_bucld_contact"> <span class="ginput_left">
-                    <input name="input_phone" type="text" required class="medium" id="input_bucld_phone" value="" aria-invalid="false" aria-required="true" oninvalid="this.setCustomValidity('Enter phone number')" oninput="this.setCustomValidity('')" />
-                    <label for="input_bucld_phone">Phone</label>
-                    </span> <span class="ginput_right">
                     <input name="email" type="text" class="medium" id="input_bucld_email" value="" aria-invalid="false" required oninvalid="this.setCustomValidity('Enter valid email')" oninput="this.setCustomValidity('')" />
                     <label for="input_bucld_email">Email</label>
                     </span> </div>
-                </fieldset>
-              </li>
-              <li id="field_bucld_badge" class="gfield field_sublabel_below field_description_below ">
-                <fieldset>
-                  <legend class="gfield_label gfield_label_before_complex">Additional Details</legend>
-                  <div class="ginput_complex ginput_container gf_name_has_2 ginput_container_name" id="input_bucld_badge"> <span id="input_bucld_affiliation_container" class="name_first">
-                    <input name="input_affiliation" type="text" class="medium" id="input_bucld_affiliation" value="" aria-invalid="false"  />
-                    <label for="input_bucld_affiliation">Affiliation</label>
-                    </span><span id="input_bucld_twitter_container" class="name_last">
-                    <input name="input_twitter" id="input_bucld_twitter" type="text" value="" class="medium" placeholder="@" aria-invalid="false" />
-                    <label for="input_bucld_twitter">Twitter Handle (for name badge)</label>
-                    </span></div>
                 </fieldset>
               </li>
             </ul>
@@ -301,32 +65,21 @@
       <div class="gf_clear gf_clear_complex"></div>
       <div id="bucld_registration">
 <!-------------------REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
-        <!--div id="preregister">
-          <h4 class="gsection_title">BUCLD Preregistration: Full (Three-Day) Conference</h4>
+        <div id="preregister">
+          <h4 class="gsection_title">BUCLD Preregistration</h4>
           <fieldset>
             <legend>Select BUCLD Preregistration type<span class="gfield_required">*</span></legend>
-            <span class="gform_description"><em>Rates are discounted during preregistration.  Preregistration closes on October 24th, at which point regular price registration will open. The "Postbacc Trainee" category includes postdocs and lab managers.</em></span>
             <div class="ginput_container ginput_container_radio">
               <ul class="gfield_radio" id="input_bucld_preregistration">
                 <li class="gchoice_bucld_preregistration_general_full">
                   <label for="choice_bucld_registration_general_preregistration" id="label_bucld_registration_general_preregistration">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_preregistration" value="General Preregistration - $195.00" onclick="calculateTotal();" class="watch-status status-general reg-full" required />
-                    General - $195</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_preregistration" value="General Preregistration - $45.00" onclick="calculateTotal();" class="watch-status status-general reg-full" required />
+                    General - $45</label>
                 </li>
                 <li class="gchoice_bucld_preregistration_student_preregistration">
                   <label for="choice_bucld_registration_student_preregistration" id="label_bucld_registration_student_preregistration">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_preregistration" value="Student Preregistration - $100.00" onclick="calculateTotal();" class="watch-status status-student reg-full" required />
-                    Student - $100</label>
-                </li>
-                <li class="gchoice_bucld_preregistration_postdoc_preregistration">
-                  <label for="choice_bucld_registration_postdoc_preregistration" id="label_bucld_registration_postdoc_preregistration">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_preregistration" value="Postbacc Trainee Preregistation - $160.00" onclick="calculateTotal();" class="watch-status status-postdoc reg-full" required />
-                    Postbacc Trainee - $160</label>
-                </li>
-                <li class="gchoice_bucld_registration_not_attending_BUCLD">
-                  <label for="choice_bucld_registration_not_attending_BUCLD" id="label_choice_bucld_registration_not_attending_BUCLD">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_not_attending_BUCLD" value="Not Attending BUCLD Events - $0.00" onclick="calculateTotal();" class="watch-status reg-none" required />
-                    Not Attending any BUCLD Events</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_preregistration" value="Student Preregistration - $0.00" onclick="calculateTotal();" class="watch-status status-student reg-full" required />
+                    Student - $0</label>
                 </li>
               </ul>
             </div>
@@ -334,203 +87,281 @@
         </div>
 <!-------------------END REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
 <!-------------------COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
-        <div id="onsite">
+        <!-- <div id="onsite">
           <h4 class="gsection_title">Registration for BUCLD<span class="gfield_required">*</span></h4>
           <fieldset>
-            <legend class="gfield_label gfield_label_before_complex">Attendee category<span class="gfield_required">*</span></legend>
-            <div class="ginput_container ginput_container_radio">
-              <ul class="gfield_radio" id="input_bucld_registration_status">
-                <li class="gchoice_bucld_status_general">
-                  <label for="choice_bucld_status_general" id="label_bucld_status_general">
-                    <input name="input_status" type="radio" id="choice_bucld_status_general" value="General registration" onclick="calculateTotal();" class="watch-status status-general" required />
-                    General (e.g., faculty)</label>
-                </li>
-                <li class="gchoice_bucld_registration_student_full">
-                  <label for="choice_bucld_status_student" id="label_bucld_status_student">
-                    <input name="input_status" type="radio" id="choice_bucld_status_student" value="Student registration" onclick="calculateTotal();" class="watch-status status-student" required />
-                    Student</label>
-                </li>
-                <li class="gchoice_bucld_registration_postdoc_full">
-                  <label for="choice_bucld_status_postdoc" id="label_bucld_status_postdoc">
-                    <input name="input_status" type="radio" id="choice_bucld_status_postdoc" value="Postbacc Trainee registration" onclick="calculateTotal();" class="watch-status status-postdoc" required />
-                    Postbacc Trainee (e.g., postdoc, lab manager)</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend class="gfield_label">BUCLD registration type<span class="gfield_required">*</span></legend>
+            <legend class="gfield_label">BUCLD registration type</legend>
             <div class="ginput_container ginput_container_radio">
               <ul class="gfield_radio" id="input_bucld_registration">
                 <li class="gchoice_bucld_registration_general_full reg-general">
                   <label for="choice_bucld_registration_general_full" id="label_bucld_registration_general_full">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_full" value="General Registration - $225.00" onclick="calculateTotal();" class="watch-status reg-full" required />
-                    Full conference registration (general) - $225</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_full" value="General Registration - $60.00" onclick="calculateTotal();" class="watch-status reg-full" required />
+                    General - $60</label>
                 </li>
                 <li class="gchoice_bucld_registration_student_full reg-student">
                   <label for="choice_bucld_registration_student_full" id="label_bucld_registration_student_full">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_full" value="Student Registration - $120.00" onclick="calculateTotal();" class="watch-status reg-full" required />
-                    Full conference registration (student) - $120</label>
-                </li>
-                <li class="gchoice_bucld_registration_postdoc_full reg-postdoc">
-                  <label for="choice_bucld_registration_postdoc_full" id="label_bucld_registration_postdoc_full">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_full" value="Postbacc Trainee Registation - $185.00" onclick="calculateTotal();" class="watch-status reg-full" required />
-                    Full conference registration (postbacc trainee) - $185</label>
-                </li>
-                <li class="gchoice_bucld_registration_general_one_day reg-general">
-                  <label for="choice_bucld_registration_general_one_day" id="label_bucld_registration_general_one_day">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_one_day" value="General One Day Registration - $135.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
-                    One day registration (general) - $135</label>
-                </li>
-                <li class="gchoice_bucld_registration_student_one_day reg-student">
-                  <label for="choice_bucld_registration_student_one_day" id="label_bucld_registration_student_one_day">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_one_day" value="Student One Day Registration - $80.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
-                    One day registration (student) - $80</label>
-                </li>
-                <li class="gchoice_bucld_registration_postdoc_one_day reg-postdoc">
-                  <label for="choice_bucld_registration_postdoc_one_day" id="label_bucld_registration_postdoc_one_day">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_one_day" value="Postbacc Trainee One Day Registation - $115.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
-                    One day registration (postbacc trainee) - $115</label>
-                </li>
-                <li class="gchoice_bucld_registration_not_attending_BUCLD">
-                  <label for="choice_bucld_registration_not_attending_BUCLD" id="label_choice_bucld_registration_not_attending_BUCLD">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_not_attending_BUCLD" value="No BUCLD conference registration - $0.00" onclick="calculateTotal();" class="watch-status reg-none" required />
-                    No registration for BUCLD conference (use if registering only for SLD and/or individual events)</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_full" value="Student Registration - $0.00" onclick="calculateTotal();" class="watch-status reg-full" required />
+                    Student - $0</label>
                 </li>
               </ul>
             </div>
-            <fieldset class="days_option">
-              <legend class="gfield_label">Select Day for One Day Registration<span class="gfield_required">*</span></legend>
-              <div class="ginput_container ginput_container_radio">
-                <ul class="gfield_radio" id="input_bucld_registration_select_day">
-                  <li class="gchoice_bucld_registration_select_day">
-                    <label for="choice_bucld_registration_select_day_friday" id="label_bucld_registration_select_day_friday">
-                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_friday" value="Friday" class="watch-status" onclick="calculateTotal();"  />
-                      Friday</label>
-                  </li>
-                  <li class="gchoice_bucld_registration_select_day">
-                    <label for="choice_bucld_registration_select_day_saturday" id="label_bucld_registration_select_day_saturday">
-                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_saturday" value="Saturday" class="watch-status" onclick="calculateTotal();"  />
-                      Saturday</label>
-                  </li>
-                  <li class="gchoice_bucld_registration_select_day">
-                    <label for="choice_bucld_registration_select_day_sunday" id="label_bucld_registration_select_day_sunday">
-                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_sunday" value="Sunday" class="watch-status" onclick="calculateTotal();"  />
-                      Sunday</label>
-                  </li>
-                  <li class="gchoice_bucld_registration_select_day day_na">
-                    <label for="choice_bucld_registration_select_day_na" id="label_bucld_registration_select_day_na">
-                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_na" onclick="calculateTotal();" class="watch-status" value="Not One-Day" checked required/>
-                      Not Applicable</label>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </fieldset>
-          <fieldset class="individual_events_option">
-            <legend class="gfield_label">Individual Events (not already included in registration type above)</legend>
-            <span class="gfield_description reg-general-postdoc">Cost (general, postdoc) is $25 per event.</span>
-            <span class="gfield_description reg-student">Cost (student) is $10 per event.</span>
-            <div class="ginput_container ginput_container_radio">
-              <ul class="gfield_radio" id="input_bucld_registration_individual_events">
-                <li class="gchoice_bucld_registration_individual_events friday-event">
-                  <label for="choice_bucld_registration_individual_events_friday_keynote" id="label_bucld_registration_individual_events_friday_keynote">
-                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_friday_keynote" value="Friday Keynote" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                    Friday Keynote</label>
-                </li>
-                <li class="gchoice_bucld_registration_individual_events saturday-event">
-                  <label for="choice_bucld_registration_individual_events_saturday_symposium" id="label_bucld_registration_individual_events_saturday_symposium">
-                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_saturday_symposium" value="Saturday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                    Saturday Symposium</label>
-                </li>
-                <li class="gchoice_bucld_registration_individual_events saturday-event">
-                  <label for="choice_bucld_registration_individual_events_saturday_plenary" id="label_bucld_registration_individual_events_saturday_plenary">
-                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_saturday_plenary" value="Saturday Plenary Address" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                    Saturday Plenary Address</label>
-                </li>
-                <li class="gchoice_bucld_registration_individual_events sunday-event">
-                  <label for="choice_bucld_registration_individual_events_sunday_symposium" id="label_bucld_registration_individual_events_sunday_symposium">
-                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_sunday_symposium" value="Sunday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                    Sunday Symposium</label>
-                </li>
-                <li class="gchoice_bucld_registration_individual_events">
-                  <label for="choice_bucld_registration_individual_events_single_session" id="label_bucld_registration_individual_events_single_session">
-                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_single_session" value="Single Session" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                    Single presentation session (on a day not otherwise registered)</label>
-                </li>
-              </ul>
-            </div>
-            <label for="event_total_individual_event_cost" id="label_event_total_individual_event_cost"> Individual Events Subtotal:</label>
-            <input value="$0.00" readonly type="text" id="event_total_individual_event_cost" />
           </fieldset>
         </div>
 <!-------------------END COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
-        <div id="student_workshop_thurday" class="thursday-workshop reg-student-postdoc">
-          <h4 class="gsection_title">RSVP for Student Workshop on Thursday</h4>
-          <fieldset>
-            <legend>Professionalization Workshop for Students and Postdocs (with light refreshments)</legend>
-            <div class="ginput_container ginput_container_checkbox">
-              <ul class="gfield_checkbox" id="input_bucld_student_workshop_thursday">
-                <li class="gchoice_bucld_student_workshop_thursday">
-                  <input name="input_student_workshop_thursday" type="checkbox" value="Will attend the Student Workshop on Thursday" id="choice_bucld_student_thursday_workshop" />
-                  <label for="choice_bucld_student_thursday_workshop" id="label_bucld_student_workshop_thursday">I am a student or postbacc trainee who will attend the Student Workshop on Thursday evening.</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-        </div>
-        <div id="pizza_lunch" class="friday-pizza student-postdoc">
-          <h4 class="gsection_title">RSVP for Student/Postbacc Trainee Pizza Lunch on Friday</h4>
-          <fieldset>
-            <legend>NIH/NSF Funding Symposium (with pizza lunch for students and postbacc trainees)</legend>
-            <div class="ginput_container ginput_container_checkbox">
-              <ul class="gfield_checkbox" id="input_bucld_student_pizza_lunch">
-                <li class="gchoice_bucld_student_pizza_lunch">
-                  <input name="input_student_pizza_lunch" type="checkbox" value="Will attend the NSF/NIH pizza lunch on Friday at 12:30PM." id="choice_bucld_student_pizza_lunch" />
-                  <label for="choice_bucld_student_pizza_lunch" id="label_bucld_student_pizza_lunch">I am a student or postbacc trainee who will attend the lunch at the NIH/NSF Funding Symposium on Friday.</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-      <h4 class="gsection_title">Registration for SLD Symposium<span class="gfield_required">*</span></h4>
-      <fieldset>
-        <legend>Society for Language Development (SLD) Symposium, Thursday 1-6 PM</legend>
-        <span class="gfield_description">See <a href="#sld-information">information at the bottom of the page about SLD and membership</a>.</span>
-        <div class="ginput_container ginput_container_radio">
-          <ul class="gfield_radio" id="input_bucld_sld">
-            <li class="gchoice_bucld_sld_member reg-general-postdoc">
-              <label for="choice_bucld_sld_member" id="label_bucld_sld_member">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_member" value="General SLD Member - $20.00" onclick="calculateTotal();" required />
-                General (SLD Member) - $20</label>
-            </li>
-            <li class="gchoice_bucld_sld_nonmember reg-general-postdoc">
-              <label for="choice_bucld_sld_nonmember" id="label_bucld_sld_nonmember">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_nonmember" value="General (not SLD member) - $50.00" onclick="calculateTotal();" required />
-                General (Not SLD Member) - $50</label>
-            </li>
-            <li class="gchoice_bucld_sld_student_member reg-student">
-              <label for="choice_bucld_sld_student_member" id="label_bucld_sld_student_member">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_student_member" value="Student SLD Member - $10.00" onclick="calculateTotal();" required />
-                Student (SLD Member) - $10</label>
-            </li>
-            <li class="gchoice_bucld_sld_student_nonmember reg-student">
-              <label for="choice_bucld_sld_student_nonmember" id="label_bucld_sld_student_nonmember">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_student_nonmember" value="Student (not SLD member) - $25.00" onclick="calculateTotal();" required />
-                Student (Not SLD Member) - $25</label>
-            </li>
-            <li class="gchoice_bucld_sld_not_attending">
-              <label for="choice_bucld_sld_not_attending" id="label_bucld_sld_not_attending">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_not_attending" value="Not attending the SLD Symposium on Thursday - $0.00" onclick="calculateTotal();" required />
-                Not Attending - $0</label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
       <h4 class="gsection_title">Demographic Questions<span class="gfield_required">*</span></h4>
       <fieldset>
         <legend>Please answer the following demographic questions, which provide data about BUCLD attendance to our funding sponsors.</legend>
+        <fieldset>
+          <legend class="gfield_label gfield_label_before_complex">Location<span class="gfield_required">*</span></legend>
+          <div class="ginput_complex ginput_container has_street has_street2 has_city has_state has_zip has_country ginput_container_address" id="input_bucld_address">
+              <span class="ginput_left address_state">
+              <input name="input_address_state" type="text" id="input_bucld_address_state" value="" required oninvalid="this.setCustomValidity('Enter State, Region, or Province Here')" oninput="this.setCustomValidity('')" />
+              <label for="input_bucld_address_state" id="input_bucld_address_state_label">State / Province / Region</label>
+              </span><span class="ginput_right address_country">
+              <select name="input_address_country" id="input_bucld_address_country" required oninvalid="this.setCustomValidity('Select Country')" oninput="this.setCustomValidity('')">
+                <option value="" selected="selected">Select Country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+                <option value="Congo, Republic of the">Congo, Republic of the</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaçao">Curaçao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="North Korea">North Korea</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine, State of">Palestine, State of</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Sint Maarten">Sint Maarten</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Sudan, South">Sudan, South</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican City">Vatican City</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <label for="input_bucld_address_country" id="input_bucld_address_country_label">Country</label>
+              </span></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Which best describes your primary role?</legend>
+          <div class="ginput_container ginput_container_radio">
+            <ul class="gfield_radio" id="input_bucld_role">
+              <li class="gchoice_bucld_role_fac">
+                <input name="input_role" type="radio" id="choice_bucld_role_fac" value="Faculty" />
+                <label for="choice_bucld_role_fac" id="label_bucld_role_fac">Faculty</label>
+              </li>
+              <li class="gchoice_bucld_role_postdoc">
+                <input name="input_role" type="radio" id="choice_bucld_role_postdoc" value="Postdoc" />
+                <label for="choice_bucld_role_postdoc" id="label_bucld_role_postdoc">Postdoctoral researcher</label>
+              </li>
+              <li class="gchoice_bucld_role_grad">
+                <input name="input_role" type="radio" id="choice_bucld_role_grad" value="Grad student" />
+                <label for="choice_bucld_role_grad" id="label_bucld_role_grad">Graduate student</label>
+              </li>
+              <li class="gchoice_bucld_role_undergrad">
+                <input name="input_role" type="radio" id="choice_bucld_role_undergrad" value="Undergrad student" />
+                <label for="choice_bucld_role_undergrad" id="label_bucld_role_undergrad">Undergraduate student</label>
+              </li>
+              <li class="gchoice_bucld_role_other">
+                <input name="input_role" type="radio" id="choice_bucld_role_other" value="Ohter role" required />
+                <label for="choice_bucld_role_other" id="label_bucld_role_other">Other</label>
+              </li>
+          </div>
+        </fieldset>
         <fieldset>
           <legend>Are you the first generation in your family to attend a four-year college or university?</legend>
           <div class="ginput_container ginput_container_radio">
@@ -672,288 +503,31 @@
           </li>
         </ul>
       </fieldset>
-      <h4 class="gsection_title">CPC Code</h4>
-      <fieldset>
-        <legend>If you have been given a CPC Code, please enter it below:</legend>
-        <ul>
-          <li id="field_bucld_cpc" class="gfield field_sublabel_below field_description_below ">
-            <label class="gfield_label" for="input_bucld_cpc">CPC Code</label>
-            <div class="ginput_container ginput_container_text">
-              <input name="input_cpc" id="input_bucld_cpc" type="text" value="" class="medium" aria-invalid="false" />
-            </div>
-          </li>
-        </ul>
-      </fieldset>
-      <h4 class="gsection_title">Payment submission</h4>
+      <h4 class="gsection_title">Submission</h4>
       <div id="totalPrice"></div>
-      <p>Submit to proceed to secure Nelnet page to enter payment information. </p>
+      <p>Submit to complete registration (proceeding to secure Nelnet page to enter payment information if payment is required). </p>
       <div class="gform_footer top_label">
-        <input type="submit" id="gform_submit_button_bucld" class="gform_button button" value="Proceed to Payment" />
+        <input type="submit" id="gform_submit_button_bucld" class="gform_button button" value="Proceed to Next Step" />
       </div>
     <!--/fieldset-->
       <p>&nbsp;</p>
       <hr>
+      <h4 class="gsection_title">Online participation</h4>
+      <p>After this form is submitted, you will be given a password and directed to complete your registration on our conference platform, Whova.  Registration on Whova is required in order to participate in BUCLD 46.</p>
       <h4 class="gsection_title">Refund Policy</h4>
-      <p>In the event that a registrant is unable to attend the conference due to extenuating circumstances, the registration fee will be refunded on request after the conference has concluded. Please email <a href="mailto:langconf@bu.edu">langconf@bu.edu</a> with all refund requests.</p>
+      <p>In the event that a registrant is unable to attend the conference due to extenuating circumstances, the registration fee will be refunded on request after the conference has concluded. Please contact <a href="mailto:langconf@bu.edu">langconf@bu.edu</a> with all refund requests.</p>
       <h4 class="gsection_title">Proceedings</h4>
       <p>Conference proceedings will be published by Cascadilla Press in print and online with open access. Ordering your own printed copy of the proceedings is separate from registration. After registering, you will receive a code for 50% off the price of the printed edition.</p>
-      <h4 class="gsection_title">SLD membership</h4>
-      <a name="sld-information"></a>
-      <p>
-        The Society for Language Development (SLD) will hold its Annual Symposium on Thursday, November 7th, from 1 PM to 6 PM, in conjunction with BUCLD.
-        More information on the SLD Symposium can be found at the <a href="http://web.sas.upenn.edu/societyforlanguagedevelopment/" target="_blank" rel="noopener noreferrer">SLD website</a>.
-        SLD membership comes with subscription to the Society's journal, <em>Language Learning and Development</em>.
-        If you become a member of SLD now, you can register for the SLD Symposium at the SLD Member rate.
-        To become a <strong>SLD Member</strong> with journal subscription, visit the
-        <a href="http://www.tandfonline.com/toc/hlld20/current" target="_blank" rel="noopener noreferrer">journal publisher's website</a>,
-        follow the link "<a href="https://www.tandfonline.com/pricing/journal/hlld20" target="_blank" rel="noopener noreferrer">Subscribe</a>",
-        and buy a "Print &amp; Online Personal" subscription.
-        To become a <strong>Student SLD Member</strong> with journal subscription at a discounted rate,
-        please contact the journal publisher's customer service at 1-800-354-1420 (ext. 4) or
-        <a href="mailto:customerservice@taylorandfrancis.com">email the publisher</a>
-        and request the journal subscription at the Student SLD Member rate.
-        After membership/subscription purchase, you can register for the SLD Symposium at the member rates.
-        If you are paying for your membership and subscription by check,
-        make sure your check is dated and delivered before the date of the Symposium
-        so that SLD can confirm that your membership preceded the Symposium.
-        More information about SLD can be found at
-        <a href="http://web.sas.upenn.edu/societyforlanguagedevelopment/" target="_blank" rel="noopener noreferrer">http://web.sas.upenn.edu/societyforlanguagedevelopment/</a>.
-      </p>
     </div>
   </form>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> 
-  <pre style="display:none"><script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<pre style="display:none"><script>
 $(document).ready(function()
 {
   "use strict";
-  // hide the hidden NA day option
-  $('.day_na').hide('');
-  // start with defaults: full, general, no SLD
   $("#choice_bucld_status_general").prop("checked", true);
-  // set demographic questions to "prefer not to respond" by default
-  // update: don't do that, make them work for it.
-  // $("#choice_bucld_generation_prefer_no_response").prop("checked", true);
-  // $("#choice_bucld_race_ethnicity_prefer_no_response").prop("checked", true);
-  // $("#choice_bucld_gender_nope").prop("checked", true);
-  // $("#choice_bucld_disability_status_prefer_no_response").prop("checked", true);
-  show_general_options();
-  update_display();
-});
-// check for pre-reg vs. onsite registration
-function is_onsite() {
-  return (document.getElementById("choice_bucld_status_general") !== null);
-}
-// check for full registration
-function is_full_registration() {
-  return (document.getElementById("choice_bucld_registration_student_full").checked ||
-      document.getElementById("choice_bucld_registration_postdoc_full").checked ||
-      document.getElementById("choice_bucld_registration_general_full").checked);
-}
-// check for one-day registration
-function is_one_day_registration() {
-  return (document.getElementById("choice_bucld_registration_student_one_day").checked ||
-    document.getElementById("choice_bucld_registration_postdoc_one_day").checked ||
-    document.getElementById("choice_bucld_registration_general_one_day").checked);
-}
-// check for pizza availability abstracting away from onsite/prereg.
-function is_pizzable() {
-  var retval = 0;
-  if (is_onsite()) {
-    retval = (document.getElementById("choice_bucld_registration_student_full").checked ||
-      document.getElementById("choice_bucld_registration_postdoc_full").checked ||
-      (document.getElementById("choice_bucld_registration_student_one_day").checked &&
-       document.getElementById("choice_bucld_registration_select_day_friday").checked) ||
-      (document.getElementById("choice_bucld_registration_postdoc_one_day").checked &&
-       document.getElementById("choice_bucld_registration_select_day_friday").checked));
-  } else {
-    retval = (document.getElementById("choice_bucld_registration_student_preregistration").checked ||
-      document.getElementById("choice_bucld_registration_postdoc_preregistration").checked);
-  }
-  return retval;
-}
-// check for workshop eligibility abstracting away from onsite/prereg
-function is_workshoppable() {
-  var retval = 0;
-  if (is_onsite()) {
-    retval = (document.getElementById("choice_bucld_registration_student_full").checked ||
-      document.getElementById("choice_bucld_registration_postdoc_full").checked);
-  } else {
-    retval = (document.getElementById("choice_bucld_registration_student_preregistration").checked ||
-      document.getElementById("choice_bucld_registration_postdoc_preregistration").checked);
-  }
-  return retval;
-}
-// show/hide day and event options as determined by the state of the registration
-function update_display() {
-  if (is_onsite()) {
-    // this is more complex during onsite registration
-    if (is_full_registration()) {
-      // if registration is full, hide the events and day options
-      hide_event_options();
-      hide_day_options();
-    } else if (is_one_day_registration()) {
-      // if registration is for one day, show the day options
-      show_day_options();
-      // hide events on the selected day if there was one
-      if (document.getElementById("choice_bucld_registration_select_day_friday").checked) {
-        $('.friday-event').hide('');
-        $("#choice_bucld_registration_individual_events_friday_keynote").prop("checked", false);
-      } else {
-        $('.friday-event').show('');
-      }
-      if (document.getElementById("choice_bucld_registration_select_day_saturday").checked) {
-        $('.saturday-event').hide('');
-        $("#choice_bucld_registration_individual_events_saturday_symposium").prop("checked", false);
-        $("#choice_bucld_registration_individual_events_saturday_plenary").prop("checked", false);
-      } else {
-        $('.saturday-event').show('');
-      }
-      if (document.getElementById("choice_bucld_registration_select_day_sunday").checked) {
-        $('.sunday-event').hide('');
-        $("#choice_bucld_registration_individual_events_sunday_symposium").prop("checked", false);
-      } else {
-        $('.sunday-event').show('');
-      }
-      // and show the event options
-      show_event_options();
-    } else {
-      // presume no BUCLD registration
-      show_all_event_day_options();
-      show_event_options();
-      hide_day_options();
-    }
-  }
-  // display the friday student event only if registered as student or postdoc for full or friday
-  if (is_pizzable()) {
-    $('.friday-pizza').show('');
-  } else {
-    // not available, hide and reset RSVP
-    $('.friday-pizza').hide('');
-    $("#choice_bucld_student_pizza_lunch").prop("checked", false);
-  }
-  // display the thurdsay student event only if registered as student or postdoc for full
-  if (is_workshoppable()) {
-    // thursday student/postdoc option is available, display
-    $('.thursday-workshop').show('');
-  } else {
-    // not available, hide and reset RSVP
-    $('.thursday-workshop').hide('');
-    $("#choice_bucld_student_thursday_workshop").prop("checked", false);
-  }
   calculateTotal();
-}
-// clear the registration options entirely, in preparation for inserting defaults
-function clear_registration() {
-  document.forms.gform_bucld.elements.input_registration.forEach(function(curr) {
-    curr.checked = false;
-  });
-  document.forms.gform_bucld.elements.input_sld.forEach(function(curr) {
-    curr.checked = false;
-  });
-  $("#choice_bucld_student_thursday_workshop").prop("checked", false);
-  $("#choice_bucld_student_pizza_lunch").prop("checked", false);
-}
-// hide and clear things that are only for students (for when status is general)
-function show_general_options() {
-    $('.reg-general').show('');
-    $('.reg-general-postdoc').show('');
-    $('.reg-student').hide('');
-    $('.reg-postdoc').hide('');
-    $('.reg-student-postdoc').hide('');
-    if (is_onsite()) {
-      clear_registration();
-      $("#choice_bucld_registration_general_full").prop("checked", true);
-    }
-    $("#choice_bucld_sld_not_attending").prop("checked", true);
-}
-// reveal things that are only for students (for when status is student)
-function show_student_options() {
-    $('.reg-general').hide('');
-    $('.reg-student').show('');
-    $('.reg-postdoc').hide('');
-    $('.reg-general-postdoc').hide('');
-    $('.reg-student-postdoc').show('');
-    if (is_onsite()) {
-      clear_registration();
-      $("#choice_bucld_registration_student_full").prop("checked", true);
-    }
-    $("#choice_bucld_sld_not_attending").prop("checked", true);
-}
-// reveal things that are only for postdocs (for when status is postdoc)
-function show_postdoc_options() {
-    $('.reg-general').hide('');
-    $('.reg-student').hide('');
-    $('.reg-postdoc').show('');
-    $('.reg-general-postdoc').show('');
-    $('.reg-student-postdoc').show('');
-    if (is_onsite()) {
-      clear_registration();
-      $("#choice_bucld_registration_postdoc_full").prop("checked", true);
-    }
-    $("#choice_bucld_sld_not_attending").prop("checked", true);
-}
-// complex show/hide logic for registration choices.
-// lookup for ids of days and events that can be selected individually
-var bucldEventSuffix = ['friday_keynote', 'saturday_symposium', 'saturday_plenary', 'sunday_symposium', 'single_session']
-var bucldDaySuffix = ['friday', 'saturday', 'sunday']
-var bucldEvents = bucldEventSuffix.map(function(x) {return 'choice_bucld_registration_individual_events_' + x;})
-var bucldDays = bucldDaySuffix.map(function(x) {return 'choice_bucld_registration_select_day_' + x;})
-// watch the registration selections
-// based on status class, show/hide student options, day/event options
-$('input:radio.watch-status').click(function()
-{
-  "use strict";
-  var thisID = $(this).attr("id");
-  if ($(this).hasClass('status-general')) {
-    show_general_options();
-  } else if ($(this).hasClass('status-postdoc')) {
-    show_postdoc_options();
-  } else if ($(this).hasClass('status-student')) {
-    show_student_options();
-  } else if ($(this).hasClass('reg-one-day')) {
-    // at the point where they click one-day, set the default day to friday
-    $("#choice_bucld_registration_select_day_friday").prop("checked", true);
-  } else if ($(this).hasClass('reg-none')) {
-    // at the point where they click one-day, set the default day to friday
-    $("#choice_bucld_registration_select_day_friday").prop("checked", true);
-    // also if this is preregistration, we no longer have a way to know status, so
-    // we must reveal all of the SLD options
-    if (!is_onsite()) {
-      show_all_status_options();
-    }
-  }
-  update_display();
 });
-// reveal the one-day options (if one-day is selected), uncheck the hidden NA day option
-function show_day_options() {
-    $('.days_option').show('');
-    $("#choice_bucld_registration_select_day_na").prop("checked", false);
-}
-// hide and clear the one-day options (if one-day is de-selected), check hidden NA day option
-function hide_day_options() {
-    $('.days_option').hide('');
-    uncheckList(bucldDays);
-    $("#choice_bucld_registration_select_day_na").prop("checked", true);
-}
-// reveal the individual event options (unless full is selected)
-function show_event_options() {
-    $('.individual_events_option').show('');
-}
-// hide the individual event options (if full is selected)
-function hide_event_options() {
-    $('.individual_events_option').hide('');
-    uncheckList(bucldEvents);
-}
-function show_all_event_day_options() {
-  $('.friday-event').show('');
-  $('.saturday-event').show('');
-  $('.sunday-event').show('');
-}
-// this is specifically to reveal SLD options during prereg for BUCLD none registration
-function show_all_status_options() {
-  $('.reg-student').show('');
-  $('.reg-general-postdoc').show('');
-}
 // demographic automation
 // each of these watches one of the demographic fields and then calls a common function
 // to keep exclusive options exclusive.
@@ -1013,26 +587,10 @@ function uncheckList(idList) {
 }
 // BUCLD prices lookup keyed on field ID
 var bucldRegPrices = {
-  'choice_bucld_registration_general_preregistration': 195,
-  'choice_bucld_registration_student_preregistration': 100,
-  'choice_bucld_registration_postdoc_preregistration': 160,
-  'choice_bucld_registration_general_full': 225,
-  'choice_bucld_registration_student_full': 120,
-  'choice_bucld_registration_postdoc_full': 185,
-  'choice_bucld_registration_general_one_day': 135,
-  'choice_bucld_registration_student_one_day': 80,
-  'choice_bucld_registration_postdoc_one_day': 115,
-  'choice_bucld_registration_general_postdoc_individual_event': 0,
-  'choice_bucld_registration_student_individual_event': 0,
-  'choice_bucld_registration_not_attending_BUCLD': 0
-}
-// SLD prices lookup keyed on field ID
-var sldRegPrices = {
-  'choice_bucld_sld_member': 20,
-  'choice_bucld_sld_nonmember': 50,
-  'choice_bucld_sld_student_member': 10,
-  'choice_bucld_sld_student_nonmember': 25,
-  'choice_bucld_sld_not_attending': 0,
+  'choice_bucld_registration_general_preregistration': 45,
+  'choice_bucld_registration_student_preregistration': 0,
+  'choice_bucld_registration_general_full': 60,
+  'choice_bucld_registration_student_full': 0,
 }
 function getBUCLDPrice()
 {
@@ -1043,55 +601,14 @@ function getBUCLDPrice()
   });
   return total;
 }
-function getSLDPrice()
-{
-  "use strict";
-  var total = 0;
-  document.forms.gform_bucld.elements.input_sld.forEach(function(curr) {
-    total += curr.checked ? sldRegPrices[curr.id] : 0;
-  });
-  return total;
-}
-// Compute prices of individual events, multiply price by number of events selected,
-// and update the on-screen subtotal for events.
-// The relevant field does not exist for pre-registration, so short circuit out if it is not there
-function getEvent_total()
-{
-  // determine the unit price by looking at what registration is picked
-  "use strict";
-  var event_total = 0;
-  var event_subtotal_field = document.getElementById("event_total_individual_event_cost");
-  if (event_subtotal_field)
-  {
-    var event_price = 25; // faculty or postdoc
-    if (document.getElementById("choice_bucld_status_student").checked) {
-      event_price = 10; //student price
-    }
-    var num_events = document.querySelectorAll('.EventCheckBox:checked').length;
-    var event_total = event_price * num_events;
-    event_subtotal_field.value = "$" + event_total.toFixed(2);
-  }
-  return event_total;
-}
-// collect BUCLD, SLD, and individual event prices for the overall total
 function calculateTotal()
 {
-  var regPrice = getBUCLDPrice() + getSLDPrice() + getEvent_total();
+  var regPrice = getBUCLDPrice();
   var divobj = document.getElementById('totalPrice');
   divobj.style.display = 'block';
   divobj.innerHTML = "Total $" + regPrice.toFixed(2);
-  if (regPrice > 0) {
-    document.getElementById('gform_submit_button_bucld').disabled = false;
-  } else {
-    document.getElementById('gform_submit_button_bucld').disabled = true;
-  }
+  document.getElementById('gform_submit_button_bucld').disabled = false;
   return totalPrice;
-}
-// hide the price, never called.  Probably should remove this.
-function hideTotal()
-{
-  var divobj = document.getElementById('totalPrice');
-  divobj.style.display = 'none';
 }
   </script></pre>
 </div>
