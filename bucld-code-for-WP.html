@@ -10,7 +10,7 @@
   If you write a better one, please send it on to us, maybe we can incorporate your ideas.
   
   Main procedural note: When the time comes to switch between preregistration and registration,
-  there are several adjustments to make about what code is commented out and "commented in."
+  there are two adjustments to make about what code is commented out and "commented in."
   
   Simple way to do this is to put <!-- before the part that is to be commented out.
   Code is set up to end that comment at the right place.  So remove the <!-- that is before
@@ -20,27 +20,12 @@
   <div class="">
     <strong class="">Boston University Conference on Language Development (BUCLD) 47:</strong>
   </div>
-<!-------------------REMOVE PREREG SUMMARY AFTER PRE-REGISTRATION------------------->
-
+<!-------------------COMMENT OUT PREREG DEADLINE AFTER PRE-REGISTRATION------------------->
+<!--
   <div>
-    <ul>
-      <li>
-        <span class="">The 4-day (full) conference pre-registration fee is $45 for general pre-registration, and $0 for student pre-registration</span>.
-      </li>
-    </ul>
-    <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 27th, 11:59 PM EDT</strong>:</div>
+    <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 20th, 11:59 PM EDT</strong>:</div>
   </div>
 <!-------------------END REMOVE PREREG SUMMARY AFTER PRE-REGISTRATION------------------->
-<!-------------------COMMENT OUT ONSITE SUMMARY DURING PRE-REGISTRATION------------------->
-  <div>
-    <ul>
-      <li>
-        The 4-day
-        <span class="">(full) conference registration fee is $60 for general registration, and $0 for student registration.</span>
-      </li>
-    </ul>
-  </div>
-<!-------------------END COMMENT OUT ONSITE SUMMARY DURING PRE-REGISTRATION------------------->
 
   <form method="post" enctype="multipart/form-data" id="gform_bucld" action="https://www-test.bu.edu/phpbin/marconi/index.php">
     <input name="form_id" type="hidden" value="bucld">
@@ -81,7 +66,7 @@
       <div class="gf_clear gf_clear_complex"></div>
       <div id="bucld_registration">
 <!-------------------REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
-
+<!--
         <div id="preregister">
           <h4 class="gsection_title">BUCLD Preregistration: Full (Four-Day) Conference</h4>
           <fieldset>
@@ -713,7 +698,6 @@
       <div class="gform_footer top_label">
         <input type="submit" id="gform_submit_button_bucld" class="gform_button button" value="Proceed to Next Step" />
       </div>
-    <!--/fieldset-->
       <p>&nbsp;</p>
       <hr>
       <h4 class="gsection_title">Refund Policy</h4>
