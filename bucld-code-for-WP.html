@@ -3,30 +3,44 @@
 <link rel="stylesheet" id="gforms_ready_class_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.2.6" type="text/css" media="all" />
 <link rel="stylesheet" id="gforms_browsers_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.2.6" type="text/css" media="all" />
 <link rel="stylesheet" id="bu_gforms-css" href="https://www.bu.edu/bucld/wp-content/mu-plugins/bu-gf-customizations/css/bu_base_gf.css?ver=BU-0.6.13" type="text/css" media="all" />
+<!--
+  Greetings, readers of the HTML code.  We will assume you are a conference organizer.
+  If you are not a conference organizer, this code is probably not interesting to you.
+  You could probably use information in here to write your own front end to the backend payment processor.
+  If you write a better one, please send it on to us, maybe we can incorporate your ideas.
+  
+  Main procedural note: When the time comes to switch between preregistration and registration,
+  there are several adjustments to make about what code is commented out and "commented in."
+  
+  Simple way to do this is to put <!-- before the part that is to be commented out.
+  Code is set up to end that comment at the right place.  So remove the <!-- that is before
+  the part you want to comment in, and put <!-- before the part you want to comment out.
+-->
 <div class="gform_wrapper" id="gform_wrapper_bucld">
   <div class="">
-      <strong class="">Boston University Conference on Language Development (BUCLD) 46:</strong>
-      <span class=""></span>
+      <strong class="">Boston University Conference on Language Development (BUCLD) 47:</strong>
   </div>
-  <div></div>
-  <div class="">The 4-day (full) conference fees include entrance to all talks, sessions, events, and publishers&#8217; exhibits. Online registration will continue to be available throughout the conference.</div>
+<!-------------------REMOVE PREREG SUMMARY AFTER PRE-REGISTRATION------------------->
+
   <div>
       <ul>
-<!--
           <li>
-              <span class="">The 4-day (full) conference pre-registration fee is $45 for general pre-registration, and $0 for student pre-registration</span>
-              .
+              <span class="">The 4-day (full) conference pre-registration fee is $45 for general pre-registration, and $0 for student pre-registration</span>.
           </li>
       </ul>
-      <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 21st, 11:59 PM EDT</strong>:</div>
+      <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 27th, 11:59 PM EDT</strong>:</div>
+  </div>
+<!-------------------END REMOVE PREREG SUMMARY AFTER PRE-REGISTRATION------------------->
+<!-------------------COMMENT OUT ONSITE SUMMARY DURING PRE-REGISTRATION------------------->
+  <div>
       <ul>
--->
           <li>
               The 4-day
               <span class="">(full) conference registration fee is $60 for general registration, and $0 for student registration.</span>
           </li>
       </ul>
   </div>
+<!-------------------END COMMENT OUT ONSITE SUMMARY DURING PRE-REGISTRATION------------------->
 
   <form method="post" enctype="multipart/form-data" id="gform_bucld" action="https://www-test.bu.edu/phpbin/marconi/index.php">
     <input name="form_id" type="hidden" value="bucld">
@@ -65,21 +79,33 @@
       <div class="gf_clear gf_clear_complex"></div>
       <div id="bucld_registration">
 <!-------------------REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
+
         <div id="preregister">
-          <h4 class="gsection_title">BUCLD Preregistration</h4>
+          <h4 class="gsection_title">BUCLD Preregistration: Full (Four-Day) Conference</h4>
           <fieldset>
             <legend>Select BUCLD Preregistration type<span class="gfield_required">*</span></legend>
+            <span class="gform_description"><em>Rates are discounted during preregistration.  Preregistration closes on October 20th, at which point regular price registration will open. The "Postbacc Trainee" category includes postdocs and lab managers.</em></span>
             <div class="ginput_container ginput_container_radio">
               <ul class="gfield_radio" id="input_bucld_preregistration">
                 <li class="gchoice_bucld_preregistration_general_full">
                   <label for="choice_bucld_registration_general_preregistration" id="label_bucld_registration_general_preregistration">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_preregistration" value="General Preregistration - $45.00" onclick="calculateTotal();" class="watch-status status-general reg-full" required />
-                    General - $45</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_preregistration" value="General Preregistration - $270.00" onclick="calculateTotal();" class="watch-status status-general reg-full" required />
+                    General - $270</label>
                 </li>
                 <li class="gchoice_bucld_preregistration_student_preregistration">
                   <label for="choice_bucld_registration_student_preregistration" id="label_bucld_registration_student_preregistration">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_preregistration" value="Student Preregistration - $0.00" onclick="calculateTotal();" class="watch-status status-student reg-full" required />
-                    Student - $0</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_preregistration" value="Student Preregistration - $165.00" onclick="calculateTotal();" class="watch-status status-student reg-full" required />
+                    Student - $165</label>
+                </li>
+                <li class="gchoice_bucld_preregistration_postdoc_preregistration">
+                  <label for="choice_bucld_registration_postdoc_preregistration" id="label_bucld_registration_postdoc_preregistration">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_preregistration" value="Postbacc Trainee Preregistation - $230.00" onclick="calculateTotal();" class="watch-status status-postdoc reg-full" required />
+                    Postbacc Trainee - $230</label>
+                </li>
+                <li class="gchoice_bucld_registration_not_attending_BUCLD">
+                  <label for="choice_bucld_registration_not_attending_BUCLD" id="label_choice_bucld_registration_not_attending_BUCLD">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_not_attending_BUCLD" value="Not Attending BUCLD Events - $0.00" onclick="calculateTotal();" class="watch-status reg-none" required />
+                    Not Attending any BUCLD Events</label>
                 </li>
               </ul>
             </div>
@@ -87,27 +113,203 @@
         </div>
 <!-------------------END REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
 <!-------------------COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
-        <!-- <div id="onsite">
+
+        <div id="onsite">
           <h4 class="gsection_title">Registration for BUCLD<span class="gfield_required">*</span></h4>
           <fieldset>
-            <legend class="gfield_label">BUCLD registration type</legend>
+            <legend class="gfield_label gfield_label_before_complex">Attendee category<span class="gfield_required">*</span></legend>
+            <div class="ginput_container ginput_container_radio">
+              <ul class="gfield_radio" id="input_bucld_registration_status">
+                <li class="gchoice_bucld_status_general">
+                  <label for="choice_bucld_status_general" id="label_bucld_status_general">
+                    <input name="input_status" type="radio" id="choice_bucld_status_general" value="General registration" onclick="calculateTotal();" class="watch-status status-general" required />
+                    General (e.g., faculty)</label>
+                </li>
+                <li class="gchoice_bucld_registration_student_full">
+                  <label for="choice_bucld_status_student" id="label_bucld_status_student">
+                    <input name="input_status" type="radio" id="choice_bucld_status_student" value="Student registration" onclick="calculateTotal();" class="watch-status status-student" required />
+                    Student</label>
+                </li>
+                <li class="gchoice_bucld_registration_postdoc_full">
+                  <label for="choice_bucld_status_postdoc" id="label_bucld_status_postdoc">
+                    <input name="input_status" type="radio" id="choice_bucld_status_postdoc" value="Postbacc Trainee registration" onclick="calculateTotal();" class="watch-status status-postdoc" required />
+                    Postbacc Trainee (e.g., postdoc, lab manager)</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="gfield_label">BUCLD registration type<span class="gfield_required">*</span></legend>
             <div class="ginput_container ginput_container_radio">
               <ul class="gfield_radio" id="input_bucld_registration">
                 <li class="gchoice_bucld_registration_general_full reg-general">
                   <label for="choice_bucld_registration_general_full" id="label_bucld_registration_general_full">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_full" value="General Registration - $60.00" onclick="calculateTotal();" class="watch-status reg-full" required />
-                    General - $60</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_full" value="General Registration - $300.00" onclick="calculateTotal();" class="watch-status reg-full" required />
+                    Full conference registration (general) - $300</label>
                 </li>
                 <li class="gchoice_bucld_registration_student_full reg-student">
                   <label for="choice_bucld_registration_student_full" id="label_bucld_registration_student_full">
-                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_full" value="Student Registration - $0.00" onclick="calculateTotal();" class="watch-status reg-full" required />
-                    Student - $0</label>
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_full" value="Student Registration - $195.00" onclick="calculateTotal();" class="watch-status reg-full" required />
+                    Full conference registration (student) - $195</label>
+                </li>
+                <li class="gchoice_bucld_registration_postdoc_full reg-postdoc">
+                  <label for="choice_bucld_registration_postdoc_full" id="label_bucld_registration_postdoc_full">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_full" value="Postbacc Trainee Registation - $260.00" onclick="calculateTotal();" class="watch-status reg-full" required />
+                    Full conference registration (postbacc trainee) - $260</label>
+                </li>
+                <li class="gchoice_bucld_registration_general_one_day reg-general">
+                  <label for="choice_bucld_registration_general_one_day" id="label_bucld_registration_general_one_day">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_general_one_day" value="General One Day Registration - $180.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
+                    One day registration (general) - $180</label>
+                </li>
+                <li class="gchoice_bucld_registration_student_one_day reg-student">
+                  <label for="choice_bucld_registration_student_one_day" id="label_bucld_registration_student_one_day">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_student_one_day" value="Student One Day Registration - $115.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
+                    One day registration (student) - $115</label>
+                </li>
+                <li class="gchoice_bucld_registration_postdoc_one_day reg-postdoc">
+                  <label for="choice_bucld_registration_postdoc_one_day" id="label_bucld_registration_postdoc_one_day">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_postdoc_one_day" value="Postbacc Trainee One Day Registation - $155.00" onclick="calculateTotal();" class="watch-status reg-one-day" required />
+                    One day registration (postbacc trainee) - $155</label>
+                </li>
+                <li class="gchoice_bucld_registration_not_attending_BUCLD">
+                  <label for="choice_bucld_registration_not_attending_BUCLD" id="label_choice_bucld_registration_not_attending_BUCLD">
+                    <input name="input_registration" type="radio" id="choice_bucld_registration_not_attending_BUCLD" value="No BUCLD conference registration - $0.00" onclick="calculateTotal();" class="watch-status reg-none" required />
+                    No registration for BUCLD conference (use if registering only for SLD and/or individual events)</label>
+                </li>
+              </ul>
+            </div>
+            <fieldset class="days_option">
+              <legend class="gfield_label">Select Day for One Day Registration<span class="gfield_required">*</span></legend>
+              <div class="ginput_container ginput_container_radio">
+                <ul class="gfield_radio" id="input_bucld_registration_select_day">
+                  <li class="gchoice_bucld_registration_select_day">
+                    <label for="choice_bucld_registration_select_day_friday" id="label_bucld_registration_select_day_friday">
+                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_friday" value="Friday" class="watch-status" onclick="calculateTotal();"  />
+                      Friday</label>
+                  </li>
+                  <li class="gchoice_bucld_registration_select_day">
+                    <label for="choice_bucld_registration_select_day_saturday" id="label_bucld_registration_select_day_saturday">
+                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_saturday" value="Saturday" class="watch-status" onclick="calculateTotal();"  />
+                      Saturday</label>
+                  </li>
+                  <li class="gchoice_bucld_registration_select_day">
+                    <label for="choice_bucld_registration_select_day_sunday" id="label_bucld_registration_select_day_sunday">
+                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_sunday" value="Sunday" class="watch-status" onclick="calculateTotal();"  />
+                      Sunday</label>
+                  </li>
+                  <li class="gchoice_bucld_registration_select_day day_na">
+                    <label for="choice_bucld_registration_select_day_na" id="label_bucld_registration_select_day_na">
+                      <input name="input_select_day" type="radio" id="choice_bucld_registration_select_day_na" onclick="calculateTotal();" class="watch-status" value="Not One-Day" checked required/>
+                      Not Applicable</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </fieldset>
+          <fieldset class="individual_events_option">
+            <legend class="gfield_label">Individual Events (not already included in registration type above)</legend>
+            <span class="gfield_description reg-general-postdoc">Cost (general, postdoc) is $35 per event.</span>
+            <span class="gfield_description reg-student">Cost (student) is $20 per event.</span>
+            <div class="ginput_container ginput_container_radio">
+              <ul class="gfield_radio" id="input_bucld_registration_individual_events">
+                <li class="gchoice_bucld_registration_individual_events friday-event">
+                  <label for="choice_bucld_registration_individual_events_friday_keynote" id="label_bucld_registration_individual_events_friday_keynote">
+                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_friday_keynote" value="Friday Keynote" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                    Friday Keynote</label>
+                </li>
+                <li class="gchoice_bucld_registration_individual_events saturday-event">
+                  <label for="choice_bucld_registration_individual_events_saturday_symposium" id="label_bucld_registration_individual_events_saturday_symposium">
+                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_saturday_symposium" value="Saturday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                    Saturday Symposium</label>
+                </li>
+                <li class="gchoice_bucld_registration_individual_events saturday-event">
+                  <label for="choice_bucld_registration_individual_events_saturday_plenary" id="label_bucld_registration_individual_events_saturday_plenary">
+                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_saturday_plenary" value="Saturday Plenary Address" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                    Saturday Plenary Address</label>
+                </li>
+                <li class="gchoice_bucld_registration_individual_events sunday-event">
+                  <label for="choice_bucld_registration_individual_events_sunday_symposium" id="label_bucld_registration_individual_events_sunday_symposium">
+                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_sunday_symposium" value="Sunday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                    Sunday Symposium</label>
+                </li>
+                <li class="gchoice_bucld_registration_individual_events">
+                  <label for="choice_bucld_registration_individual_events_single_session" id="label_bucld_registration_individual_events_single_session">
+                    <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_single_session" value="Single Session" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                    Single presentation session (on a day not otherwise registered)</label>
+                </li>
+              </ul>
+            </div>
+            <label for="event_total_individual_event_cost" id="label_event_total_individual_event_cost"> Individual Events Subtotal:</label>
+            <input value="$0.00" readonly type="text" id="event_total_individual_event_cost" />
+          </fieldset>
+        </div>
+<!-------------------END COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
+
+      <div id="student_workshop_thurday" class="thursday-workshop reg-student-postdoc">
+          <h4 class="gsection_title">RSVP for Student Workshop on Thursday</h4>
+          <fieldset>
+            <legend>Professionalization Workshop for Students and Postdocs (with light refreshments)</legend>
+            <div class="ginput_container ginput_container_checkbox">
+              <ul class="gfield_checkbox" id="input_bucld_student_workshop_thursday">
+                <li class="gchoice_bucld_student_workshop_thursday">
+                  <input name="input_student_workshop_thursday" type="checkbox" value="Will attend the Student Workshop on Thursday" id="choice_bucld_student_thursday_workshop" />
+                  <label for="choice_bucld_student_thursday_workshop" id="label_bucld_student_workshop_thursday">I am a student or postbacc trainee who will attend the Student Workshop on Thursday evening.</label>
                 </li>
               </ul>
             </div>
           </fieldset>
         </div>
-<!-------------------END COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
+        <div id="pizza_lunch" class="friday-pizza student-postdoc">
+          <h4 class="gsection_title">RSVP for Student/Postbacc Trainee Pizza Lunch on Friday</h4>
+          <fieldset>
+            <legend>NIH/NSF Funding Symposium (with pizza lunch for students and postbacc trainees)</legend>
+            <div class="ginput_container ginput_container_checkbox">
+              <ul class="gfield_checkbox" id="input_bucld_student_pizza_lunch">
+                <li class="gchoice_bucld_student_pizza_lunch">
+                  <input name="input_student_pizza_lunch" type="checkbox" value="Will attend the NSF/NIH pizza lunch on Friday at 12:30PM." id="choice_bucld_student_pizza_lunch" />
+                  <label for="choice_bucld_student_pizza_lunch" id="label_bucld_student_pizza_lunch">I am a student or postbacc trainee who will attend the lunch at the NIH/NSF Funding Symposium on Friday.</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <h4 class="gsection_title">Registration for SLD Symposium<span class="gfield_required">*</span></h4>
+      <fieldset>
+        <legend>Society for Language Development (SLD) Symposium, Thursday 1-6 PM</legend>
+        <span class="gfield_description">See <a href="#sld-information">information at the bottom of the page about SLD and membership</a>.</span>
+        <div class="ginput_container ginput_container_radio">
+          <ul class="gfield_radio" id="input_bucld_sld">
+            <li class="gchoice_bucld_sld_member reg-general-postdoc">
+              <label for="choice_bucld_sld_member" id="label_bucld_sld_member">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_member" value="General SLD Member - $20.00" onclick="calculateTotal();" required />
+                General (SLD Member) - $20</label>
+            </li>
+            <li class="gchoice_bucld_sld_nonmember reg-general-postdoc">
+              <label for="choice_bucld_sld_nonmember" id="label_bucld_sld_nonmember">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_nonmember" value="General (not SLD member) - $50.00" onclick="calculateTotal();" required />
+                General (Not SLD Member) - $50</label>
+            </li>
+            <li class="gchoice_bucld_sld_student_member reg-student">
+              <label for="choice_bucld_sld_student_member" id="label_bucld_sld_student_member">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_student_member" value="Student SLD Member - $10.00" onclick="calculateTotal();" required />
+                Student (SLD Member) - $10</label>
+            </li>
+            <li class="gchoice_bucld_sld_student_nonmember reg-student">
+              <label for="choice_bucld_sld_student_nonmember" id="label_bucld_sld_student_nonmember">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_student_nonmember" value="Student (not SLD member) - $25.00" onclick="calculateTotal();" required />
+                Student (Not SLD Member) - $25</label>
+            </li>
+            <li class="gchoice_bucld_sld_not_attending">
+              <label for="choice_bucld_sld_not_attending" id="label_bucld_sld_not_attending">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_not_attending" value="Not attending the SLD Symposium on Thursday - $0.00" onclick="calculateTotal();" required />
+                Not Attending - $0</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
       <h4 class="gsection_title">Demographic Questions<span class="gfield_required">*</span></h4>
       <fieldset>
         <legend>Please answer the following demographic questions, which provide data about BUCLD attendance to our funding sponsors.</legend>
@@ -512,12 +714,32 @@
     <!--/fieldset-->
       <p>&nbsp;</p>
       <hr>
-      <h4 class="gsection_title">Online participation</h4>
-      <p>After this form is submitted, you will be given a password and directed to complete your registration on our conference platform, Whova.  Registration on Whova is required in order to participate in BUCLD 46.</p>
       <h4 class="gsection_title">Refund Policy</h4>
       <p>In the event that a registrant is unable to attend the conference due to extenuating circumstances, the registration fee will be refunded on request after the conference has concluded. Please contact <a href="mailto:langconf@bu.edu">langconf@bu.edu</a> with all refund requests.</p>
       <h4 class="gsection_title">Proceedings</h4>
       <p>Conference proceedings will be published by Cascadilla Press in print and online with open access. Ordering your own printed copy of the proceedings is separate from registration. After registering, you will receive a code for 50% off the price of the printed edition.</p>
+      <h4 class="gsection_title">SLD membership</h4>
+      <a name="sld-information"></a>
+      <p>
+        The Society for Language Development (SLD) will hold its Annual Symposium on Thursday, November 3rd, from 1 PM to 6 PM, in conjunction with BUCLD.
+        More information on the SLD Symposium can be found at the <a href="http://web.sas.upenn.edu/societyforlanguagedevelopment/" target="_blank" rel="noopener noreferrer">SLD website</a>.
+        SLD membership comes with subscription to the Society's journal, <em>Language Learning and Development</em>.
+        If you become a member of SLD now, you can register for the SLD Symposium at the SLD Member rate.
+        To become a <strong>SLD Member</strong> with journal subscription, visit the
+        <a href="http://www.tandfonline.com/toc/hlld20/current" target="_blank" rel="noopener noreferrer">journal publisher's website</a>,
+        follow the link "<a href="https://www.tandfonline.com/pricing/journal/hlld20" target="_blank" rel="noopener noreferrer">Subscribe</a>",
+        and buy a "Print &amp; Online Personal" subscription.
+        To become a <strong>Student SLD Member</strong> with journal subscription at a discounted rate,
+        please contact the journal publisher's customer service at 1-800-354-1420 (ext. 4) or
+        <a href="mailto:customerservice@taylorandfrancis.com">email the publisher</a>
+        and request the journal subscription at the Student SLD Member rate.
+        After membership/subscription purchase, you can register for the SLD Symposium at the member rates.
+        If you are paying for your membership and subscription by check,
+        make sure your check is dated and delivered before the date of the Symposium
+        so that SLD can confirm that your membership preceded the Symposium.
+        More information about SLD can be found at
+        <a href="http://web.sas.upenn.edu/societyforlanguagedevelopment/" target="_blank" rel="noopener noreferrer">http://web.sas.upenn.edu/societyforlanguagedevelopment/</a>.
+      </p>
     </div>
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -525,9 +747,228 @@
 $(document).ready(function()
 {
   "use strict";
+  // hide the hidden NA day option
+  $('.day_na').hide('');
+  // start with defaults: full, general, no SLD
   $("#choice_bucld_status_general").prop("checked", true);
-  calculateTotal();
+  show_general_options();
+  update_display();
 });
+// check for pre-reg vs. onsite registration
+function is_onsite() {
+  return (document.getElementById("choice_bucld_status_general") !== null);
+}
+// check for full registration
+function is_full_registration() {
+  return (document.getElementById("choice_bucld_registration_student_full").checked ||
+      document.getElementById("choice_bucld_registration_postdoc_full").checked ||
+      document.getElementById("choice_bucld_registration_general_full").checked);
+}
+// check for one-day registration
+function is_one_day_registration() {
+  return (document.getElementById("choice_bucld_registration_student_one_day").checked ||
+    document.getElementById("choice_bucld_registration_postdoc_one_day").checked ||
+    document.getElementById("choice_bucld_registration_general_one_day").checked);
+}
+// check for pizza availability abstracting away from onsite/prereg.
+function is_pizzable() {
+  var retval = 0;
+  if (is_onsite()) {
+    retval = (document.getElementById("choice_bucld_registration_student_full").checked ||
+      document.getElementById("choice_bucld_registration_postdoc_full").checked ||
+      (document.getElementById("choice_bucld_registration_student_one_day").checked &&
+       document.getElementById("choice_bucld_registration_select_day_friday").checked) ||
+      (document.getElementById("choice_bucld_registration_postdoc_one_day").checked &&
+       document.getElementById("choice_bucld_registration_select_day_friday").checked));
+  } else {
+    retval = (document.getElementById("choice_bucld_registration_student_preregistration").checked ||
+      document.getElementById("choice_bucld_registration_postdoc_preregistration").checked);
+  }
+  return retval;
+}
+// check for workshop eligibility abstracting away from onsite/prereg
+function is_workshoppable() {
+  var retval = 0;
+  if (is_onsite()) {
+    retval = (document.getElementById("choice_bucld_registration_student_full").checked ||
+      document.getElementById("choice_bucld_registration_postdoc_full").checked);
+  } else {
+    retval = (document.getElementById("choice_bucld_registration_student_preregistration").checked ||
+      document.getElementById("choice_bucld_registration_postdoc_preregistration").checked);
+  }
+  return retval;
+}
+// show/hide day and event options as determined by the state of the registration
+function update_display() {
+  if (is_onsite()) {
+    // this is more complex during onsite registration
+    if (is_full_registration()) {
+      // if registration is full, hide the events and day options
+      hide_event_options();
+      hide_day_options();
+    } else if (is_one_day_registration()) {
+      // if registration is for one day, show the day options
+      show_day_options();
+      // hide events on the selected day if there was one
+      if (document.getElementById("choice_bucld_registration_select_day_friday").checked) {
+        $('.friday-event').hide('');
+        $("#choice_bucld_registration_individual_events_friday_keynote").prop("checked", false);
+      } else {
+        $('.friday-event').show('');
+      }
+      if (document.getElementById("choice_bucld_registration_select_day_saturday").checked) {
+        $('.saturday-event').hide('');
+        $("#choice_bucld_registration_individual_events_saturday_symposium").prop("checked", false);
+        $("#choice_bucld_registration_individual_events_saturday_plenary").prop("checked", false);
+      } else {
+        $('.saturday-event').show('');
+      }
+      if (document.getElementById("choice_bucld_registration_select_day_sunday").checked) {
+        $('.sunday-event').hide('');
+        $("#choice_bucld_registration_individual_events_sunday_symposium").prop("checked", false);
+      } else {
+        $('.sunday-event').show('');
+      }
+      // and show the event options
+      show_event_options();
+    } else {
+      // presume no BUCLD registration
+      show_all_event_day_options();
+      show_event_options();
+      hide_day_options();
+    }
+  }
+  // display the friday student event only if registered as student or postdoc for full or friday
+  if (is_pizzable()) {
+    $('.friday-pizza').show('');
+  } else {
+    // not available, hide and reset RSVP
+    $('.friday-pizza').hide('');
+    $("#choice_bucld_student_pizza_lunch").prop("checked", false);
+  }
+  // display the thurdsay student event only if registered as student or postdoc for full
+  if (is_workshoppable()) {
+    // thursday student/postdoc option is available, display
+    $('.thursday-workshop').show('');
+  } else {
+    // not available, hide and reset RSVP
+    $('.thursday-workshop').hide('');
+    $("#choice_bucld_student_thursday_workshop").prop("checked", false);
+  }
+  calculateTotal();
+}
+// clear the registration options entirely, in preparation for inserting defaults
+function clear_registration() {
+  document.forms.gform_bucld.elements.input_registration.forEach(function(curr) {
+    curr.checked = false;
+  });
+  document.forms.gform_bucld.elements.input_sld.forEach(function(curr) {
+    curr.checked = false;
+  });
+  $("#choice_bucld_student_thursday_workshop").prop("checked", false);
+  $("#choice_bucld_student_pizza_lunch").prop("checked", false);
+}
+// show things that are options for general (for when status is general)
+function show_general_options() {
+    $('.reg-general').show('');
+    $('.reg-general-postdoc').show('');
+    $('.reg-student').hide('');
+    $('.reg-postdoc').hide('');
+    $('.reg-student-postdoc').hide('');
+    if (is_onsite()) {
+      clear_registration();
+      $("#choice_bucld_registration_general_full").prop("checked", true);
+    }
+    $("#choice_bucld_sld_not_attending").prop("checked", true);
+}
+// reveal things that are options for students (for when status is student)
+function show_student_options() {
+    $('.reg-general').hide('');
+    $('.reg-student').show('');
+    $('.reg-postdoc').hide('');
+    $('.reg-general-postdoc').hide('');
+    $('.reg-student-postdoc').show('');
+    if (is_onsite()) {
+      clear_registration();
+      $("#choice_bucld_registration_student_full").prop("checked", true);
+    }
+    $("#choice_bucld_sld_not_attending").prop("checked", true);
+}
+// reveal things that are options for postdocs (for when status is postdoc)
+function show_postdoc_options() {
+    $('.reg-general').hide('');
+    $('.reg-student').hide('');
+    $('.reg-postdoc').show('');
+    $('.reg-general-postdoc').show('');
+    $('.reg-student-postdoc').show('');
+    if (is_onsite()) {
+      clear_registration();
+      $("#choice_bucld_registration_postdoc_full").prop("checked", true);
+    }
+    $("#choice_bucld_sld_not_attending").prop("checked", true);
+}
+// complex show/hide logic for registration choices.
+// lookup for ids of days and events that can be selected individually
+var bucldEventSuffix = ['friday_keynote', 'saturday_symposium', 'saturday_plenary', 'sunday_symposium', 'single_session']
+var bucldDaySuffix = ['friday', 'saturday', 'sunday']
+var bucldEvents = bucldEventSuffix.map(function(x) {return 'choice_bucld_registration_individual_events_' + x;})
+var bucldDays = bucldDaySuffix.map(function(x) {return 'choice_bucld_registration_select_day_' + x;})
+// watch the registration selections
+// based on status class, show/hide student options, day/event options
+$('input:radio.watch-status').click(function()
+{
+  "use strict";
+  var thisID = $(this).attr("id");
+  if ($(this).hasClass('status-general')) {
+    show_general_options();
+  } else if ($(this).hasClass('status-postdoc')) {
+    show_postdoc_options();
+  } else if ($(this).hasClass('status-student')) {
+    show_student_options();
+  } else if ($(this).hasClass('reg-one-day')) {
+    // at the point where they click one-day, set the default day to friday
+    $("#choice_bucld_registration_select_day_friday").prop("checked", true);
+  } else if ($(this).hasClass('reg-none')) {
+    // at the point where they click one-day, set the default day to friday
+    $("#choice_bucld_registration_select_day_friday").prop("checked", true);
+    // also if this is preregistration, we no longer have a way to know status, so
+    // we must reveal all of the SLD options
+    if (!is_onsite()) {
+      show_all_status_options();
+    }
+  }
+  update_display();
+});
+// reveal the one-day options (if one-day is selected), uncheck the hidden NA day option
+function show_day_options() {
+    $('.days_option').show('');
+    $("#choice_bucld_registration_select_day_na").prop("checked", false);
+}
+// hide and clear the one-day options (if one-day is de-selected), check hidden NA day option
+function hide_day_options() {
+    $('.days_option').hide('');
+    uncheckList(bucldDays);
+    $("#choice_bucld_registration_select_day_na").prop("checked", true);
+}
+// reveal the individual event options (unless full is selected)
+function show_event_options() {
+    $('.individual_events_option').show('');
+}
+// hide the individual event options (if full is selected)
+function hide_event_options() {
+    $('.individual_events_option').hide('');
+    uncheckList(bucldEvents);
+}
+function show_all_event_day_options() {
+  $('.friday-event').show('');
+  $('.saturday-event').show('');
+  $('.sunday-event').show('');
+}
+// this is specifically to reveal SLD options during prereg for BUCLD none registration
+function show_all_status_options() {
+  $('.reg-student').show('');
+  $('.reg-general-postdoc').show('');
+}
 // demographic automation
 // each of these watches one of the demographic fields and then calls a common function
 // to keep exclusive options exclusive.
@@ -586,11 +1027,28 @@ function uncheckList(idList) {
   }
 }
 // BUCLD prices lookup keyed on field ID
+// NOTE: individual events should be set to 0 here, handled in getEvent_total()
 var bucldRegPrices = {
-  'choice_bucld_registration_general_preregistration': 45,
-  'choice_bucld_registration_student_preregistration': 0,
-  'choice_bucld_registration_general_full': 60,
-  'choice_bucld_registration_student_full': 0,
+  'choice_bucld_registration_general_preregistration': 270,
+  'choice_bucld_registration_student_preregistration': 165,
+  'choice_bucld_registration_postdoc_preregistration': 230,
+  'choice_bucld_registration_general_full': 300,
+  'choice_bucld_registration_student_full': 195,
+  'choice_bucld_registration_postdoc_full': 260,
+  'choice_bucld_registration_general_one_day': 180,
+  'choice_bucld_registration_student_one_day': 115,
+  'choice_bucld_registration_postdoc_one_day': 155,
+  'choice_bucld_registration_general_postdoc_individual_event': 0,
+  'choice_bucld_registration_student_individual_event': 0,
+  'choice_bucld_registration_not_attending_BUCLD': 0
+}
+// SLD prices lookup keyed on field ID
+var sldRegPrices = {
+  'choice_bucld_sld_member': 20,
+  'choice_bucld_sld_nonmember': 50,
+  'choice_bucld_sld_student_member': 10,
+  'choice_bucld_sld_student_nonmember': 25,
+  'choice_bucld_sld_not_attending': 0,
 }
 function getBUCLDPrice()
 {
@@ -601,13 +1059,48 @@ function getBUCLDPrice()
   });
   return total;
 }
+function getSLDPrice()
+{
+  "use strict";
+  var total = 0;
+  document.forms.gform_bucld.elements.input_sld.forEach(function(curr) {
+    total += curr.checked ? sldRegPrices[curr.id] : 0;
+  });
+  return total;
+}
+// Compute prices of individual events, multiply price by number of events selected,
+// and update the on-screen subtotal for events.
+// The relevant field does not exist for pre-registration, so short circuit out if it is not there
+function getEvent_total()
+{
+  // determine the unit price by looking at what registration is picked
+  "use strict";
+  var event_total = 0;
+  var event_subtotal_field = document.getElementById("event_total_individual_event_cost");
+  if (event_subtotal_field)
+  {
+    var event_price = 35; // faculty or postdoc - individual event
+    if (document.getElementById("choice_bucld_status_student").checked) {
+      event_price = 20; //student price - - individual event
+    }
+    var num_events = document.querySelectorAll('.EventCheckBox:checked').length;
+    var event_total = event_price * num_events;
+    event_subtotal_field.value = "$" + event_total.toFixed(2);
+  }
+  return event_total;
+}
+// collect BUCLD, SLD, and individual event prices for the overall total
 function calculateTotal()
 {
-  var regPrice = getBUCLDPrice();
+  var regPrice = getBUCLDPrice() + getSLDPrice() + getEvent_total();
   var divobj = document.getElementById('totalPrice');
   divobj.style.display = 'block';
   divobj.innerHTML = "Total $" + regPrice.toFixed(2);
-  document.getElementById('gform_submit_button_bucld').disabled = false;
+  if (regPrice > 0) {
+    document.getElementById('gform_submit_button_bucld').disabled = false;
+  } else {
+    document.getElementById('gform_submit_button_bucld').disabled = true;
+  }
   return totalPrice;
 }
   </script></pre>
