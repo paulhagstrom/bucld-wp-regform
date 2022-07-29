@@ -585,40 +585,55 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Please specify your race/ethnicity:</legend>
+          <legend>Please specify your ethnicity:</legend>
           <div class="ginput_container ginput_container_checkbox ginput_container_checkbox_require_1 require">
             <ul class="gfield_radio" id="input_bucld_race_ethnicity">
-              <li class="gchoice_bucld_race_ethnicity_american_indian_alaskan_native">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_american_indian_alaskan_native" value="American Indian or Alaskan Native" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_american_indian_alaskan_native" id="label_bucld_race_ethnicity_american_indian_alaskan_native">American Indian or Alaska Native</label>
+              <li class="gchoice_bucld_ethnicity_hispanic_latinx">
+                <input name="input_ethnicity[]" type="radio" id="choice_bucld_ethnicity_hispanic_latinx" value="Hispanic/Latinx" class="require-one watch-ethnicity" />
+                <label for="choice_bucld_ethnicity_hispanic_latinx" id="label_bucld_ethnicity_hispanic_latinx">Hispanic/Latinx</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_asian">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_asian" value="Asian" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_asian" id="label_bucld_race_ethnicity_asian">Asian</label>
+              <li class="gchoice_bucld_ethnicity_not_hispanic_latinx">
+                <input name="input_ethnicity[]" type="radio" id="choice_bucld_ethnicity_not_hispanic_latinx" value="Not Hispanic/Latinx" class="require-one watch-ethnicity" />
+                <label for="choice_bucld_ethnicity_not_hispanic_latinx" id="label_bucld_ethnicity_not_hispanic_latinx">Not Hispanic/Latinx</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_black_african_american">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_black_african_american" value="Black or African American" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_black_african_american" id="label_bucld_race_ethnicity_black_african_american">Black or African American</label>
+              <li class="gchoice_bucld_ethnicity_prefer_no_response">
+                <input name="input_ethnicity[]" type="radio" id="choice_bucld_ethnicity_prefer_no_response" value="No response" class="require-one watch-ethnicity" />
+                <label for="choice_bucld_ethnicity_prefer_no_response" id="label_bucld_ethnicity_prefer_no_response">Prefer not to respond</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_hispanic_latino">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_hispanic_latino" value="Hispanic/Latino" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_hispanic_latino" id="label_bucld_race_ethnicity_hispanic_latino">Hispanic/Latino</label>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Please specify your race:</legend>
+          <div class="ginput_container ginput_container_checkbox ginput_container_checkbox_require_1 require">
+            <ul class="gfield_radio" id="input_bucld_race">
+              <li class="gchoice_bucld_race_american_indian_alaskan_native">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_american_indian_alaskan_native" value="American Indian or Alaskan Native" class="require-one watch-race" />
+                <label for="choice_bucld_race_american_indian_alaskan_native" id="label_bucld_race_american_indian_alaskan_native">American Indian or Alaska Native</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_native_hawaiian_or_pacific_islander">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_native_hawaiian_or_pacific_islander" value="Native Hawaiian or Pacific Islander" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_native_hawaiian_or_pacific_islander" id="label_bucld_race_ethnicity_native_hawaiian_or_pacific_islander">Native Hawaiian or Pacific Islander</label>
+              <li class="gchoice_bucld_race_asian">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_asian" value="Asian" class="require-one watch-race" />
+                <label for="choice_bucld_race_asian" id="label_bucld_race_asian">Asian</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_white_caucasian">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_white_caucasian" value="White or Caucasian" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_white_caucasian" id="label_bucld_race_ethnicity_white_caucasian">White or Caucasian</label>
+              <li class="gchoice_bucld_race_black_african_american">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_black_african_american" value="Black or African American" class="require-one watch-race" />
+                <label for="choice_bucld_race_black_african_american" id="label_bucld_race_black_african_american">Black or African American</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_other">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_other" value="Other" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_other" id="label_bucld_race_ethnicity_other">Other</label>
+              <li class="gchoice_bucld_race_native_hawaiian_or_pacific_islander">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_native_hawaiian_or_pacific_islander" value="Native Hawaiian or Pacific Islander" class="require-one watch-race" />
+                <label for="choice_bucld_race_native_hawaiian_or_pacific_islander" id="label_bucld_race_native_hawaiian_or_pacific_islander">Native Hawaiian or Pacific Islander</label>
               </li>
-              <li class="gchoice_bucld_race_ethnicity_prefer_no_response">
-                <input name="input_race_ethnicity[]" type="checkbox" id="choice_bucld_race_ethnicity_prefer_no_response" value="No response" class="require-one watch-ethnicity" />
-                <label for="choice_bucld_race_ethnicity_prefer_no_response" id="label_bucld_race_ethnicity_prefer_no_response">Prefer not to respond</label>
+              <li class="gchoice_bucld_race_white_caucasian">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_white_caucasian" value="White or Caucasian" class="require-one watch-race" />
+                <label for="choice_bucld_race_white_caucasian" id="label_bucld_race_white_caucasian">White or Caucasian</label>
+              </li>
+              <li class="gchoice_bucld_race_other">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_other" value="Other" class="require-one watch-race" />
+                <label for="choice_bucld_race_other" id="label_bucld_race_other">Other</label>
+              </li>
+              <li class="gchoice_bucld_race_prefer_no_response">
+                <input name="input_race[]" type="checkbox" id="choice_bucld_race_prefer_no_response" value="No response" class="require-one watch-race" />
+                <label for="choice_bucld_race_prefer_no_response" id="label_bucld_race_prefer_no_response">Prefer not to respond</label>
               </li>
             </ul>
           </div>
@@ -651,45 +666,49 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Please specify your disability status:</legend>
-          <div class="ginput_container ginput_container_checkbox ginput_container_checkbox_require_1 require">
-            <ul class="gfield_checkbox" id="input_bucld_disability_status">
-              <li class="gchoice_bucld_disability_status_hearing_impairment">
-                <input name="input_disability_status[]" type="checkbox" value="Hearing impairment" id="choice_bucld_disability_status_hearing_impairment" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_hearing_impairment" id="label_bucld_disability_status_hearing_impairment">Deaf/Hard of hearing</label>
+          <legend>Do you identify as having a disability?</legend>
+          <div class="ginput_container ginput_container_radio">
+            <ul class="gfield_radio" id="input_bucld_disability">
+              <li class="gchoice_bucld_disability_yes">
+                <input name="input_disability" type="radio" id="choice_bucld_disability_yes" value="Disability yes" />
+                <label for="choice_bucld_disability_yes" id="label_bucld_disabilty_yes">Yes</label>
               </li>
-              <li class="gchoice_bucld_disability_status_visual_impairment">
-                <input name="input_disability_status[]" type="checkbox" value="Visual impairment" id="choice_bucld_disability_status_visual_impairment" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_visual_impairment" id="label_bucld_disability_status_visual_impairment">Visual impairment</label>
+              <li class="gchoice_bucld_disability_no">
+                <input name="input_disability" type="radio" id="choice_bucld_disability_no" value="Disability no" />
+                <label for="choice_bucld_disability_no" id="label_bucld_disability_no">No</label>
               </li>
-              <li class="gchoice_bucld_disability_status_mobility_orthapedic">
-                <input name="input_disability_status[]" type="checkbox" value="Mobility/orthapedic impairment" id="choice_bucld_disability_status_mobility_orthapedic" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_mobility_orthapedic" id="label_bucld_disability_status_mobility_orthapedic">Mobility/Orthopedic impairment</label>
+              <li class="gchoice_bucld_disability_prefer_no_response">
+                <input name="input_disability" type="radio" id="choice_bucld_disability_prefer_no_response" value="No response" required />
+                <label for="choice_bucld_disability_prefer_no_response" id="label_bucld_disability_prefer_no_response">Prefer not to respond</label>
               </li>
-              <li class="gchoice_bucld_disability_status_other">
-                <input name="input_disability_status[]" type="checkbox" value="Other" id="choice_bucld_disability_status_other" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_other" id="label_bucld_disability_status_other">Other impairment</label>
-              </li>
-              <li class="gchoice_bucld_disability_status_none">
-                <input name="input_disability_status[]" type="checkbox" value="No disability" id="choice_bucld_disability_status_none" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_none" id="label_bucld_disability_status_none">None</label>
-              </li>
-              <li class="gchoice_bucld_disability_status_prefer_no_response">
-                <input name="input_disability_status[]" type="checkbox" value="No response" id="choice_bucld_disability_status_prefer_no_response" class="require-one watch-disability" />
-                <label for="choice_bucld_disability_status_prefer_no_response" id="label_bucld_disability_status_prefer_no_response">Prefer not to respond</label>
+            </ul>
+            <ul class="gform_fields top_label form_sublabel_below description_below">
+              <li id="field_bucld_disability_status" class="gfield field_sublabel_below field_description_above ">
+                <label class="gfield_label" for="input_bucld_access_needs">If so, please describe below:</label>
+                <div class="ginput_container ginput_container_textarea">
+                  <textarea name="input_disability_status" id="input_bucld_disability_status" class="textarea medium" aria-invalid="false" rows="3" cols="50"></textarea>
+                </div>
               </li>
             </ul>
           </div>
         </fieldset>
       </fieldset>
-      <h4 class="gsection_title">American Sign Language Interpreting</h4>
+      <h4 class="gsection_title">Access at BUCLD</h4>
       <fieldset>
-        <legend>Please check below if you expect to use American Sign Language interpreting at the conference.</legend>
+        <legend>Please check below if you will use ASL-English interpreters (provided by the conference).</legend>
         <div class="ginput_container ginput_container_checkbox">
           <ul class="gfield_checkbox" id="input_bucld_sign_language_interpreter">
             <li class="gchoice_bucld_sign_language_interpreter">
               <input name="input_sign_language_interpreter" type="checkbox" value="I expect to use an ASL interpreter" id="choice_bucld_sign_language_interpreter" />
-              <label for="choice_bucld_sign_language_interpreter" id="label_bucld_sign_language_interpreter">I expect to use an American Sign Language interpreter.</label>
+              <label for="choice_bucld_sign_language_interpreter" id="label_bucld_sign_language_interpreter">I will use ASL-English interpreters (provided by the conference).</label>
+            </li>
+          </ul>
+          <ul class="gform_fields top_label form_sublabel_below description_below">
+            <li id="field_bucld_access_needs" class="gfield field_sublabel_below field_description_above ">
+              <label class="gfield_label" for="input_bucld_access_needs">If you have any additional access needs, please describe below:</label>
+              <div class="ginput_container ginput_container_textarea">
+                <textarea name="input_access_needs" id="input_bucld_access_needs" class="textarea medium" aria-invalid="false" rows="3" cols="50"></textarea>
+              </div>
             </li>
           </ul>
         </div>
@@ -982,23 +1001,13 @@ $('input:checkbox.watch-gender').click(function()
   var excSuf = ['nope'];
   checkUncheckGroup(optPre, incSuf, excSuf, thisID);
 });
-// disability status
-$('input:checkbox.watch-disability').click(function()
+// race
+$('input:checkbox.watch-race').click(function()
 {
   "use strict";
   var thisID = $(this).attr("id");
-  var optPre = 'choice_bucld_disability_status_';
-  var incSuf = ['hearing_impairment', 'visual_impairment', 'mobility_orthapedic', 'other'];
-  var excSuf = ['none', 'prefer_no_response'];
-  checkUncheckGroup(optPre, incSuf, excSuf, thisID);
-});
-// race/ethnicity
-$('input:checkbox.watch-ethnicity').click(function()
-{
-  "use strict";
-  var thisID = $(this).attr("id");
-  var optPre = 'choice_bucld_race_ethnicity_';
-  var incSuf = ['american_indian_alaskan_native', 'asian', 'black_african_american', 'hispanic_latino', 'native_hawaiian_or_pacific_islander', 'white_caucasian', 'other'];
+  var optPre = 'choice_bucld_race_';
+  var incSuf = ['american_indian_alaskan_native', 'asian', 'black_african_american', 'native_hawaiian_or_pacific_islander', 'white_caucasian', 'other'];
   var excSuf = ['prefer_no_response'];
   checkUncheckGroup(optPre, incSuf, excSuf, thisID);
 });
