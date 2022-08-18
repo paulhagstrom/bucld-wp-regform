@@ -285,14 +285,14 @@
         </span>
         <div class="ginput_container ginput_container_radio">
           <ul class="gfield_radio" id="input_bucld_sld">
-            <li class="gchoice_bucld_sld_member reg-general-postdoc">
-              <label for="choice_bucld_sld_member" id="label_bucld_sld_member">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_member" value="General - $25.00" onclick="calculateTotal();" required />
-                General - $25</label>
+            <li class="gchoice_bucld_sld_general reg-general-postdoc">
+              <label for="choice_bucld_sld_general" id="label_bucld_sld_general">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_general" value="General - $20.00" onclick="calculateTotal();" required />
+                General - $20</label>
             </li>
-            <li class="gchoice_bucld_sld_student_member reg-student">
-              <label for="choice_bucld_sld_student_member" id="label_bucld_sld_student_member">
-                <input name="input_sld" type="radio" id="choice_bucld_sld_student_member" value="Student - $10.00" onclick="calculateTotal();" required />
+            <li class="gchoice_bucld_sld_student reg-student">
+              <label for="choice_bucld_sld_student" id="label_bucld_sld_student">
+                <input name="input_sld" type="radio" id="choice_bucld_sld_student" value="Student - $10.00" onclick="calculateTotal();" required />
                 Student - $10</label>
             </li>
             <li class="gchoice_bucld_sld_not_attending">
@@ -730,7 +730,6 @@
       <p>In the event that a registrant is unable to attend the conference due to extenuating circumstances, the registration fee will be refunded on request after the conference has concluded. Please contact <a href="mailto:langconf@bu.edu">langconf@bu.edu</a> with all refund requests.</p>
       <h4 class="gsection_title">Proceedings</h4>
       <p>Conference proceedings will be published by Cascadilla Press in print and online with open access. Ordering your own printed copy of the proceedings is separate from registration. After registering, you will receive a code for 50% off the price of the printed edition.</p>
-      <h4 class="gsection_title">SLD membership</h4>
     </div>
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -1025,10 +1024,8 @@ var bucldRegPrices = {
 }
 // SLD prices lookup keyed on field ID
 var sldRegPrices = {
-  'choice_bucld_sld_member': 20,
-  'choice_bucld_sld_nonmember': 50,
-  'choice_bucld_sld_student_member': 10,
-  'choice_bucld_sld_student_nonmember': 25,
+  'choice_bucld_sld_general': 20,
+  'choice_bucld_sld_student': 10,
   'choice_bucld_sld_not_attending': 0,
 }
 function getBUCLDPrice()
