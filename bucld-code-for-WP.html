@@ -1075,7 +1075,8 @@ function calculateTotal()
   if (regPrice > 0) {
     document.getElementById('gform_submit_button_bucld').disabled = false;
   } else {
-    document.getElementById('gform_submit_button_bucld').disabled = true;
+    // update: allow submission even for 0, but leave code here in case we want it back someday
+    document.getElementById('gform_submit_button_bucld').disabled = false;
   }
   return totalPrice;
 }
