@@ -1,6 +1,24 @@
-<!--p style="text-align: center;">Registration for BUCLD 48 is open! Click <a href="http://www.bu.edu/bucld/conference-info/registration/">here</a> to register.</p>
+<!--
+  Greetings, readers of the HTML code.  We will assume you are a conference organizer.
+  If you are not a conference organizer, this code is probably not interesting to you.
+  You could probably use information in here to write your own front end to the backend payment processor.
+  If you write a better one, please send it on to us, maybe we can incorporate your ideas.
+  
+  Main procedural note: When the time comes to switch between preregistration and registration,
+  there are two adjustments to make about what code is commented out and "commented in."
+  
+  Simple way to do this is to put <!-- before the part that is to be commented out.
+  Code is set up to end that comment at the right place.  So remove the <!-- that is before
+  the part you want to comment in, and put <!-- before the part you want to comment out.
+  
+  Also: when testing, set the form to point to www-test, when ready to go live, set the form to point
+  to www.
 -->
-<!-------------------COMMENT OUT PREREG PRICING AFTER PRE-REGISTRATION------------------->
+
+<!------------ BLOCK: REG OPENING ------------>
+<!------------ PUT <!-- JUST BELOW IF REG IS ALREADY OPEN ------------>
+<p style="text-align: center;">Registration for BUCLD 48 will be opening soon.</p>
+<!------------ END BLOCK: REG OPENING ------------>
 
 <div>
   Registration rates for BUCLD 48 are the same for in-person and remote attendance. (Single-event rates are for in-person attendance only.) 
@@ -32,59 +50,27 @@
      <li>postbacc trainee: $35</li>
      <li>student: $20</li>
   </ul>
-  <!-------------------END REMOVE PREREG PRICING AFTER PRE-REGISTRATION------------------->
-  <!-------------------COMMENT OUT REGULAR PRICING DURING PRE-REGISTRATION------------------->
-  <!--
-  1. <strong>REGULAR 4-day</strong>
-  <ul>
-     <li>general: $300</li>
-     <li>postbacc trainee: $260</li>
-     <li>student: $195</li>
-  </ul>
-  2. <strong>ONE-DAY</strong>
-  <ul>
-     <li>general: $180</li>
-     <li>postbacc trainee: $155</li>
-     <li>student: $115</li>
-  </ul>
-  3. <strong>SINGLE-EVENT</strong>
-  <ul>
-     <li>general: $35</li>
-     <li>postbacc trainee: $35</li>
-     <li>student: $20</li>
-  </ul>
-  <!-------------------END REMOVE REGULAR PRICING DURING PRE-REGISTRATION------------------->
   
   <link rel="stylesheet" id="gforms_reset_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.2.6" type="text/css" media="all" />
   <link rel="stylesheet" id="gforms_formsmain_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.2.6" type="text/css" media="all" />
   <link rel="stylesheet" id="gforms_ready_class_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.2.6" type="text/css" media="all" />
   <link rel="stylesheet" id="gforms_browsers_css-css" href="https://www.bu.edu/bucld/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.2.6" type="text/css" media="all" />
   <link rel="stylesheet" id="bu_gforms-css" href="https://www.bu.edu/bucld/wp-content/mu-plugins/bu-gf-customizations/css/bu_base_gf.css?ver=BU-0.6.13" type="text/css" media="all" />
-  <!--
-    Greetings, readers of the HTML code.  We will assume you are a conference organizer.
-    If you are not a conference organizer, this code is probably not interesting to you.
-    You could probably use information in here to write your own front end to the backend payment processor.
-    If you write a better one, please send it on to us, maybe we can incorporate your ideas.
-    
-    Main procedural note: When the time comes to switch between preregistration and registration,
-    there are two adjustments to make about what code is commented out and "commented in."
-    
-    Simple way to do this is to put <!-- before the part that is to be commented out.
-    Code is set up to end that comment at the right place.  So remove the <!-- that is before
-    the part you want to comment in, and put <!-- before the part you want to comment out.
-  -->
   <div class="gform_wrapper" id="gform_wrapper_bucld">
     <div class="">
       <strong class="">Boston University Conference on Language Development (BUCLD) 48:</strong>
     </div>
-  <!-------------------COMMENT OUT PREREG DEADLINE AFTER PRE-REGISTRATION------------------->
-  <!--
+<!------------ BLOCK: PRE-REG OPENING ------------>
+<!------------ PUT <!-- JUST BELOW IF PRE-REG DEADLINE HAS PASSED ------------>
     <div>
       <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 20th, 11:59 PM EDT</strong>:</div>
     </div>
-  <!-------------------END REMOVE PREREG SUMMARY AFTER PRE-REGISTRATION------------------->
-  
-    <form method="post" enctype="multipart/form-data" id="gform_bucld" action="https://www.bu.edu/phpbin/marconi/index.php">
+<!------------ END BLOCK: PRE-REG OPENING ------------>
+
+<!------------ BLOCK: REG FORM HEADER ------------>
+<!------------ PUT <!-- JUST BELOW IF REGISTRATION IS NOT OPEN ------------>
+
+    <form method="post" enctype="multipart/form-data" id="gform_bucld" action="https://www-test.bu.edu/phpbin/marconi/index.php">
       <input name="form_id" type="hidden" value="bucld">
       <div class="gform_heading"></div>
       <div class="gform_body">
@@ -115,8 +101,8 @@
                       <label for="input_bucld_affiliation">Affiliation</label>
                       </span>
                       <span class="ginput_right">
-                      <input name="input_twitter" type="text" class="medium" id="input_bucld_twitter" value="" aria-invalid="false" />
-                      <label for="input_bucld_twitter">Pronouns (optional)</label>
+                      <input name="input_pronouns" type="text" class="medium" id="input_bucld_pronouns" value="" aria-invalid="false" />
+                      <label for="input_bucld_pronouns">Pronouns (optional)</label>
                       </span>
                     </div>
                   </fieldset>
@@ -137,8 +123,11 @@
         </div>
         <div class="gf_clear gf_clear_complex"></div>
         <div id="bucld_registration">
-  <!-------------------REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
-  <!--
+<!------------ BLOCK: PRE-REG FIELDS ------------>
+<!------------ IF A) REGISTRATION IS NOT OPEN ------------>
+<!------------ OR B) PRE-REGISTRATION HAS FINISHED ------------>
+<!------------ PUT <!-- JUST BELOW ------------>
+<!--
           <div id="preregister">
             <h4 class="gsection_title">BUCLD Preregistration: Full (Four-Day) Conference</h4>
             <fieldset>
@@ -170,8 +159,12 @@
               </div>
             </fieldset>
           </div>
-  <!-------------------END REMOVE PREREGISTER ID AFTER PRE-REGISTRATION------------------->
-  <!-------------------COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
+  <!------------ END BLOCK: PRE-REG FIELDS ------------>
+  
+  <!------------ BLOCK: ON-SITE FIELDS ------------>
+  <!------------ IF PRE-REGISTRATION HAS NOT FINISHED ------------>
+  <!------------ PUT <!-- JUST BELOW ------------>
+  
           <div id="onsite">
             <h4 class="gsection_title">Registration for BUCLD<span class="gfield_required">*</span></h4>
             <fieldset>
@@ -335,8 +328,12 @@
               <input value="$0.00" readonly type="text" id="event_total_individual_event_cost" />
             </fieldset>
           </div>
-  <!-------------------END COMMENT OUT ONSITE ID DURING PRE-REGISTRATION------------------->
+<!------------ END BLOCK: ON-SITE FIELDS ------------>
   
+<!------------ BLOCK: MAIN FORM BODY ------------>
+<!------------ IF REGISTRATION IS NOT YET OPEN ------------>
+<!------------ PUT <!-- JUST BELOW ------------>
+
           <div id="student_workshop_thursday" class="thursday-workshop reg-student-postdoc">
             <h4 class="gsection_title">RSVP for Student Workshop on Thursday</h4>
             <fieldset>
@@ -725,13 +722,13 @@
             <legend>Please specify your gender:</legend>
             <div class="ginput_container ginput_container_checkbox ginput_container_checkbox_require_1 require">
               <ul class="gfield_checkbox" id="input_bucld_gender">
-                <li class="gchoice_bucld_gender_female">
-                  <input name="input_gender[]" type="checkbox" value="Female" id="choice_bucld_gender_female" class="require-one watch-gender" />
-                  <label for="choice_bucld_gender_female" id="label_bucld_gender_female">Woman</label>
+                <li class="gchoice_bucld_gender_woman">
+                  <input name="input_gender[]" type="checkbox" value="Woman" id="choice_bucld_gender_woman" class="require-one watch-gender" />
+                  <label for="choice_bucld_gender_woman" id="label_bucld_gender_woman">Woman</label>
                 </li>
-                <li class="gchoice_bucld_gender_male">
-                  <input name="input_gender[]" type="checkbox" value="Male" id="choice_bucld_gender_male" class="require-one watch-gender" />
-                  <label for="choice_bucld_gender_male" id="label_bucld_gender_male">Man</label>
+                <li class="gchoice_bucld_gender_man">
+                  <input name="input_gender[]" type="checkbox" value="Male" id="choice_bucld_gender_man" class="require-one watch-gender" />
+                  <label for="choice_bucld_gender_man" id="label_bucld_gender_man">Man</label>
                 </li>
                 <li class="gchoice_bucld_gender_nonbinary">
                   <input name="input_gender[]" type="checkbox" value="Non-binary" id="choice_bucld_gender_nonbinary" class="require-one watch-gender" />
@@ -1058,7 +1055,7 @@
     "use strict";
     var thisID = $(this).attr("id");
     var optPre = 'choice_bucld_gender_';
-    var incSuf = ['female', 'male', 'nonbinary', 'other'];
+    var incSuf = ['woman', 'man', 'nonbinary', 'other'];
     var excSuf = ['nope'];
     checkUncheckGroup(optPre, incSuf, excSuf, thisID);
   });
@@ -1173,4 +1170,4 @@
   }
     </script></pre>
   </div>
-  
+<!------------ END BLOCK: MAIN FORM BODY ------------>
