@@ -302,10 +302,10 @@
                       <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_friday_keynote" value="Friday Keynote" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
                       Friday Keynote</label>
                   </li>
-                  <li class="gchoice_bucld_registration_individual_events saturday-event">
-                    <label for="choice_bucld_registration_individual_events_saturday_symposium" id="label_bucld_registration_individual_events_saturday_symposium">
-                      <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_saturday_symposium" value="Saturday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
-                      Saturday Symposium</label>
+                  <li class="gchoice_bucld_registration_individual_events sunday-event">
+                    <label for="choice_bucld_registration_individual_events_sunday_symposium" id="label_bucld_registration_individual_events_sunday_symposium">
+                      <input name="input_individual_events[]" type="checkbox" id="choice_bucld_registration_individual_events_sunday_symposium" value="Sunday Symposium" onclick="calculateTotal();" onchange="getEvent_total()" class="EventCheckBox" />
+                      Sunday Symposium</label>
                   </li>
                   <li class="gchoice_bucld_registration_individual_events saturday-event">
                     <label for="choice_bucld_registration_individual_events_saturday_plenary" id="label_bucld_registration_individual_events_saturday_plenary">
@@ -890,19 +890,17 @@
         }
         if (document.getElementById("choice_bucld_registration_select_day_saturday").checked) {
           $('.saturday-event').hide('');
-          $("#choice_bucld_registration_individual_events_saturday_symposium").prop("checked", false);
+          //$("#choice_bucld_registration_individual_events_saturday_symposium").prop("checked", false);
           $("#choice_bucld_registration_individual_events_saturday_plenary").prop("checked", false);
         } else {
           $('.saturday-event').show('');
         }
-        /*
         if (document.getElementById("choice_bucld_registration_select_day_sunday").checked) {
           $('.sunday-event').hide('');
           $("#choice_bucld_registration_individual_events_sunday_symposium").prop("checked", false);
         } else {
           $('.sunday-event').show('');
         }
-        */
         // and show the event options
         show_event_options();
       } else {
@@ -984,7 +982,7 @@
   // complex show/hide logic for registration choices.
   // lookup for ids of days and events that can be selected individually
   //var bucldEventSuffix = ['friday_keynote', 'saturday_symposium', 'saturday_plenary', 'sunday_symposium', 'single_session']
-  var bucldEventSuffix = ['friday_keynote', 'saturday_symposium', 'saturday_plenary', 'single_session']
+  var bucldEventSuffix = ['friday_keynote', 'sunday_symposium', 'saturday_plenary', 'single_session']
   var bucldDaySuffix = ['friday', 'saturday', 'sunday']
   var bucldEvents = bucldEventSuffix.map(function(x) {return 'choice_bucld_registration_individual_events_' + x;})
   var bucldDays = bucldDaySuffix.map(function(x) {return 'choice_bucld_registration_select_day_' + x;})
@@ -1037,7 +1035,7 @@
   function show_all_event_day_options() {
     $('.friday-event').show('');
     $('.saturday-event').show('');
-    //$('.sunday-event').show('');
+    $('.sunday-event').show('');
   }
   // this is specifically to reveal SLD options during prereg for BUCLD none registration
   function show_all_status_options() {
