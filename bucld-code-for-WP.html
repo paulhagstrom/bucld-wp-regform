@@ -5,7 +5,8 @@
   If you write a better one, please send it on to us, maybe we can incorporate your ideas.
   
   Main procedural note: When the time comes to switch between preregistration and registration,
-  there are two adjustments to make about what code is commented out and "commented in."
+  there are a few adjustments to make about what code is commented out and "commented in."
+  Follow the instructions in the comments below.
   
   Simple way to do this is to put <!-- before the part that is to be commented out.
   Code is set up to end that comment at the right place.  So remove the <!-- that is before
@@ -61,7 +62,7 @@
       <strong class="">Boston University Conference on Language Development (BUCLD) 48:</strong>
     </div>
 <!------------ BLOCK: PRE-REG OPENING ------------>
-<!------------ PUT <!-- JUST BELOW IF PRE-REG DEADLINE HAS PASSED ------------>
+<!------------ PUT <!-- JUST BELOW IF PRE-REG DEADLINE HAS ALREADY PASSED ------------>
     <div>
       <div class="">Pre-registration closes and regular registration opens on <strong>Thursday, October 20th, 11:59 PM EDT</strong>:</div>
     </div>
@@ -127,7 +128,7 @@
 <!------------ IF A) REGISTRATION IS NOT OPEN ------------>
 <!------------ OR B) PRE-REGISTRATION HAS FINISHED ------------>
 <!------------ PUT <!-- JUST BELOW ------------>
-<!--
+
           <div id="preregister">
             <h4 class="gsection_title">BUCLD Preregistration: Full (Four-Day) Conference</h4>
             <fieldset>
@@ -164,7 +165,7 @@
   <!------------ BLOCK: ON-SITE FIELDS ------------>
   <!------------ IF PRE-REGISTRATION HAS NOT FINISHED ------------>
   <!------------ PUT <!-- JUST BELOW ------------>
-  
+  <!--
           <div id="onsite">
             <h4 class="gsection_title">Registration for BUCLD<span class="gfield_required">*</span></h4>
             <fieldset>
@@ -258,39 +259,7 @@
                 </div>
               </fieldset>
             </fieldset>
-  
-  Access for in-person vs. remote/virtual attendance: The keynote, plenary, and symposium presentations will be presented in person and live-streamed for remote participants, and questions following these presentations will be taken from both the live and remote audience. The majority of other presentations (talks and posters) will be in-person and not live-streamed. However, with presenters’ consent, in-person talks will be recorded for later viewing by remote participants; in-person posters will not be recorded.
-  
-  <fieldset>
-            <legend>How will you be attending the conference?</legend>
-            <div class="ginput_container ginput_container_radio">
-              <ul class="gfield_radio" id="input_bucld_attend">
-                <li class="gchoice_bucld_attend_inperson">
-                  <input name="input_attend" type="radio" id="choice_bucld_attend_inperson" value="inperson" />
-                  <label for="choice_bucld_attend_inperson" id="label_bucld_attend_inperson">In person</label>
-                </li>
-                <li class="gchoice_bucld_attend_virtual">
-                  <input name="input_attend" type="radio" id="choice_bucld_attend_virtual" value="virtual" />
-                  <label for="choice_bucld_attend_virtual" id="label_bucld_attend_virtual">Virtually</label>
-                </li>
-            </div>
-          </fieldset>
-  
-  <fieldset>
-            <legend>If you are giving a presentation, do you consent to having your presentation recorded (for later viewing by remote participants)?</legend>
-            <div class="ginput_container ginput_container_radio">
-              <ul class="gfield_radio" id="input_bucld_record">
-                <li class="gchoice_bucld_record_yes">
-                  <input name="input_record" type="radio" id="choice_bucld_record_yes" value="yes" />
-                  <label for="choice_bucld_record_yes" id="label_bucld_record_yes">Yes</label>
-                </li>
-                <li class="gchoice_bucld_record_no">
-                  <input name="input_record" type="radio" id="choice_bucld_record_no" value="no" />
-                  <label for="choice_bucld_record_no" id="label_bucld_record_no">No</label>
-                </li>
-            </div>
-          </fieldset>
-  
+    
             <fieldset class="individual_events_option">
               <legend class="gfield_label">Individual Events (not already included in registration type above)</legend>
               <span class="gfield_description reg-general-postdoc">Cost (general, postdoc) is $35 per event.</span>
@@ -328,6 +297,39 @@
 <!------------ BLOCK: MAIN FORM BODY ------------>
 <!------------ IF REGISTRATION IS NOT YET OPEN ------------>
 <!------------ PUT <!-- JUST BELOW ------------>
+                      
+          <fieldset>
+            <legend>How will you be attending the conference?</legend>
+            <span class="gfield_description">
+              Access for in-person vs. remote/virtual attendance: The keynote, plenary, and symposium presentations will be presented in person and live-streamed for remote participants, and questions following these presentations will be taken from both the live and remote audience. The majority of other presentations (talks and posters) will be in-person and not live-streamed. However, with presenters’ consent, in-person talks will be recorded for later viewing by remote participants; in-person posters will not be recorded.
+            </span>
+              <div class="ginput_container ginput_container_radio">
+              <ul class="gfield_radio" id="input_bucld_attend">
+                <li class="gchoice_bucld_attend_inperson">
+                  <input name="input_attend" type="radio" id="choice_bucld_attend_inperson" value="inperson" />
+                  <label for="choice_bucld_attend_inperson" id="label_bucld_attend_inperson">In person</label>
+                </li>
+                <li class="gchoice_bucld_attend_virtual">
+                  <input name="input_attend" type="radio" id="choice_bucld_attend_virtual" value="virtual" />
+                  <label for="choice_bucld_attend_virtual" id="label_bucld_attend_virtual">Virtually</label>
+                </li>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>If you are giving a presentation, do you consent to having your presentation recorded (for later viewing by remote participants)?</legend>
+            <div class="ginput_container ginput_container_radio">
+              <ul class="gfield_radio" id="input_bucld_record">
+                <li class="gchoice_bucld_record_yes">
+                  <input name="input_record" type="radio" id="choice_bucld_record_yes" value="yes" />
+                  <label for="choice_bucld_record_yes" id="label_bucld_record_yes">Yes</label>
+                </li>
+                <li class="gchoice_bucld_record_no">
+                  <input name="input_record" type="radio" id="choice_bucld_record_no" value="no" />
+                  <label for="choice_bucld_record_no" id="label_bucld_record_no">No</label>
+                </li>
+            </div>
+          </fieldset>
 
           <div id="student_workshop_thursday" class="thursday-workshop reg-student-postdoc">
             <h4 class="gsection_title">RSVP for Student Workshop on Thursday</h4>
